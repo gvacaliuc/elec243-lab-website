@@ -1,5 +1,5 @@
 site_name: ELEC 243 Labs
-theme: 'readthedocs'
+theme: readthedocs
 pages:
 - Lab Home:
   - {Home: lab-home/index.md}
@@ -83,4 +83,4 @@ markdown_extensions:
   - fontawesome_markdown
 extra_javascript:
   - mathjax-config.js
-  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
