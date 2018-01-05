@@ -78,9 +78,9 @@ pages:
   #- {Home: misc_images/index.md}
 docs_dir: ./source
 markdown_extensions:
-    - pymdownx.arithmatex
-    - markdown.extensions.admonition
-    - fontawesome_markdown
+  - pymdownx.arithmatex
+  - markdown.extensions.admonition
+  - fontawesome_markdown
 extra_javascript:
   - mathjax-config.js
   - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
