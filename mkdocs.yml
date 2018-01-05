@@ -1,0 +1,86 @@
+site_name: ELEC 243 Labs
+theme: 'readthedocs'
+pages:
+- Lab Home:
+  - {Home: lab-home/index.md}
+  - {Introduction: lab-home/introduction.md}
+  - {Lab Station Handbook: lab-home/lab-station-handbook.md}
+  - {Tools and Resources: lab-home/tools-and-resources.md}
+  - {VirtualBench: lab-home/virtualbench.md}
+- References:
+  - {Patch Cords and Cables: references/patch-cords-and-cables.md}
+  - {The Breadboard: references/breadboard.md}
+  - {The Interface Modules: references/interface.md}
+  - {Wiring: references/wiring.md}
+  - {Resistor Color Codes: references/color_code.md}
+  - {Lab Report: references/lab-report.md}
+- Lab 1:
+  - {Home: lab1/index.md}
+  - {Safety: lab1/safety.md}
+  - {Background: lab1/background.md}
+  - {'DC Measurements: the DMM': lab1/experiment_1-1.md}
+  - {Plotting Data in Matlab: lab1/plotting-help.md}
+  - {Grounds and Grounding: lab1/interlude.md}
+  - {The Oscilloscope and Function Generator: lab1/experiment_1-2.md}
+  - {Cleaning Up: lab1/postlude.md}
+#- Lab 2:
+  #- {Home: lab2/index.md}
+  #- {Background: lab2/background.md}
+  #- {Before You Begin: lab2/before-you-begin.md}
+  #- {Electroacoustic Transducers I: lab2/experiment_2-1.md}
+  #- {The Breadboard: lab2/breadboard.md}
+  #- {Electroacoustic Transducers II: lab2/experiment_2-2.md}
+  #- {Optoelectronic Signal Sources and Sinks: lab2/experiment_2-3.md}
+#- Lab 3:
+  #- {Home: lab3/index.md}
+  #- {Introduction: lab3/introduction.md}
+  #- {Resistive Voltage Dividers: lab3/experiment_3-1.md}
+  #- {Measuring the Transfer Function: lab3/interlude.md}
+  #- {Filters and Transfer Function: lab3/experiment_3-2.md}
+#- Lab 4:
+  #- {Home: lab4/index.md}
+  #- {Introduction: lab4/introduction.md}
+  #- {Before Lab: lab4/before-lab.md}
+  #- {Organizing Your Breadboard: lab4/organizing-your-breadboard.md}
+  #- {The 741 Op-Amp: lab4/experiment_4-1.md}
+  #- {The Inverting Configuration: lab4/experiment_4-2.md}
+  #- {Standard Signal Levels: lab4/standard-signal-levels.md}
+  #- {Transducer Amplifiers: lab4/experiment_4-3.md}
+#- Lab 5:
+  #- {Home: lab5/index.md}
+  #- {Introduction: lab5/introduction.md}
+  #- {Prelude: lab5/prelude.md}
+  #- {Virtual Instruments with Labview: lab5/experiment_5-1.md}
+  #- {Signal Acquisition: lab5/experiment_5-2.md}
+  #- {The Spectrum of Acoustic Signals: lab5/experiment_5-3.md}
+#- Lab 6:
+  #- {Home: lab6/index.md}
+  #- {Introduction: lab6/introduction.md}
+  #- {Sampling and Quantization: lab6/experiment_6-1.md}
+  #- {Recording a Reference Signal: lab6/experiment_6-2.md}
+  #- {Signal Processing in Matlab: lab6/experiment_6-3.md}
+#- Lab 7:
+  #- {Home: lab7/index.md}
+  #- {Introduction: lab7/introduction.md}
+  #- {Digital Logic: lab7/experiment_7-1.md}
+#- Lab 8:
+  #- {Home: lab8/index.md}
+  #- {Introduction: lab8/introduction.md}
+  #- {Building a Velleman Kit: lab8/soldering.md}
+  #- {Report: lab8/report.md}
+  #- {Sign Off Sheet: lab8/sign-off-sheet.md}
+#- Final Lab:
+  #- {Home: final-lab/index.md}
+  #- {Introduction: final-lab/introduction.md}
+  #- {Project Specification : final-lab/project-specification.md}
+  #- {Deliverables: final-lab/deliverables.md}
+#- Miscellanous Images:
+  #- {Home: misc_images/index.md}
+docs_dir: ./source
+markdown_extensions:
+    - pymdownx.arithmatex
+    - markdown.extensions.admonition
+    - fontawesome_markdown
+extra_javascript:
+  - mathjax-config.js
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
