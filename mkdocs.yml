@@ -2,7 +2,7 @@ site_name: ELEC 243 Labs
 theme: readthedocs
 pages:
 - Lab Home:
-  - {Home: lab-home/index.md}
+  - {Home: index.md}
   - {Introduction: lab-home/introduction.md}
   - {Lab Station Handbook: lab-home/lab-station-handbook.md}
   - {Tools and Resources: lab-home/tools-and-resources.md}
