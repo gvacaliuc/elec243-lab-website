@@ -1,9 +1,4 @@
-ELEC 240 Lab
-
-------------------------------------------------------------------------
-
-Tools and Resources
-===================
+# Tools and Resources
 
 If you look over the labs we have planned, it's clear that there's a
 considerable amount of work to be done. Fortunately we have a
@@ -43,10 +38,10 @@ other) to measure signals.
 #### Patch Cords
 
 Patch cords are lengths of cable a foot or so long with a connector on
-each end. We have two kinds: with [banana plugs](./figs/banana_adapter.jpg) for
+each end. We have two kinds: with [banana plugs](../misc_images/#banana-adapter) for
 connecting to the power supply and DMM, and with [BNC
-connectors](./figs/bnc_t.jpg) for connecting to the oscilloscope and
-function generator. We also have [BNC clip leads](./figs/bnc_cliplead.jpg)
+connectors](../misc_images/#bnc-t) for connecting to the oscilloscope and
+function generator. We also have [BNC clip leads](../misc_images/#bnc-cliplead)
 for connecting instruments directly to components, but the interface
 module provides an easier way to do this in most cases.
 
