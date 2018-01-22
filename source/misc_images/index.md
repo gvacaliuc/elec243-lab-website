@@ -32,3 +32,6 @@
 
 ### Banana Plug Patch Cords
 ![Banana Plug Patch Cord](../figs/banana_plug_patch_cords.jpg)
+
+### Battery Pack
+![Battery Pack](../figs/batt_pack.jpg)

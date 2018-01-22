@@ -10,8 +10,8 @@ DC Measurements: the DMM
 
 ### Equipment
 
--   [Battery Pack and Batteries](../misc_images/#batt-pack)
--   [Lightbulb Socket Board](../misc_images/#lamp-board)
+-   [Battery Pack and Batteries](../misc_images/#battery-pack)
+-   Lightbulb Socket Board
 -   Digital Multimeter
 -   Banana Plug Patch Cords
 
@@ -128,7 +128,7 @@ appears *across* pairs of conductors.
 
 7. **Does your resistance change when you wet your fingers? If so, speculate
    why. What voltage would be necessary to produce a 5mA current through you?**
-   (Why 5mA? Read [Safety](../safety)).
+   (Why 5mA? Read [Safety](./safety)).
 
 8. Using the DMM, **measure the resistance of the light bulb. Does this
    correspond to the value you would expect from Ohm's Law given the values of
