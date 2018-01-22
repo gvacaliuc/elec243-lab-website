@@ -74,8 +74,8 @@ pages:
   #- {Introduction: final-lab/introduction.md}
   #- {Project Specification : final-lab/project-specification.md}
   #- {Deliverables: final-lab/deliverables.md}
-#- Miscellanous Images:
-  #- {Home: misc_images/index.md}
+- Miscellanous Images:
+  - {Home: misc_images/index.md}
 docs_dir: ./source
 markdown_extensions:
   - pymdownx.arithmatex
