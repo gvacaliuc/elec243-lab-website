@@ -2,10 +2,10 @@
 
 ## Before Going to Lab
 
-* [Introduction](./introduction)
-* [Lab Station Handbook](./lab-station-handbook)
-* [Tools and Resources](./tools-and-resources)
-* [VirtualBench](./virtualbench)
+* [Introduction](./lab-home/introduction)
+* [Lab Station Handbook](./lab-home/lab-station-handbook)
+* [Tools and Resources](./lab-home/tools-and-resources)
+* [VirtualBench](./lab-home/virtualbench)
 
 ## The Laboratories
 
