@@ -9,7 +9,7 @@ How? The two most common ways are:
 * by cooking you (the hard way)
 * by disrupting your nervous system (the easy way)
 
-The good news is that in ELEC 240 laboratory, you will not be exposed to
+The good news is that in ELEC 243 laboratory, you will not be exposed to
 dangerous voltage levels *unless* you mishandle the equipment. Before we get
 close enough to the equipment to mishandle it, let's take a closer look at just
 how you can get hurt if you do.

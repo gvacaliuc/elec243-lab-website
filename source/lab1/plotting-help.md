@@ -1,4 +1,4 @@
-### ELEC 240 Lab 
+### ELEC 243 Lab 
 
 # Plotting X vs. Y 
 
