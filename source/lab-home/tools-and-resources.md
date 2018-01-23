@@ -8,8 +8,7 @@ to assemble them, instruments to analyze them, data analysis software,
 and of course documentation.
 
 In this chapter we will take a brief inventory of the tools and
-resources we have available. A complete list, with more detailed
-descriptions, is contained in *The UNILAB User's Manual*.
+resources we have available.
 
 ### Instruments
 
@@ -66,10 +65,8 @@ several of your other lab courses, so try to hang onto them.
 
 ### Lab PC
 
-Each lab station has a Dell DX280 PC running Windows XP. It is connected
-to the network so you may access your OwlSpace directory and your
-favorite web sites. In addition to the regular complement of features it
-contains a *data acquisition* card, allowing it to measure and produce
-signals in the circuits you will be building. Networked printing is
-available from the printer (printer name "ink") in the equipment room
-(A143).
+Each lab station has a Dell PC running Windows 10. It is connected to
+the network so you may access Canvas, and other lab
+and common software. It also contains a data acquisition card,
+allowing it to measure and produce signals in the circuits you will be
+building.
