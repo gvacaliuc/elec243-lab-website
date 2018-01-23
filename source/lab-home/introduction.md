@@ -1,11 +1,6 @@
-ELEC 243 Lab
+# Introduction
 
-------------------------------------------------------------------------
-
-Introduction
-============
-
-Welcome to the ELEC 243 Lab, the real world companion to the ELEC 241
+Welcome to the ELEC 243 Lab, the real world companion to the ELEC 243
 lectures.
 
 ### The Grand Plan
@@ -27,26 +22,26 @@ Here's what we have to do:
 
 | **Date** | **Laboratory** |
 | -------- | -------------- |
-|  Week 1  | RCEL Presentation: Tutorial on Writing Lab Reports |
-|  Week 2  | Lab 1: Basic Electrical Measurements |
-|  Week 3  | Lab 2: AC Signals and Measurements |
-|  Week 4  | Lab 3: Computer Aided Measurements I |
-|  Week 5  | Lab 4: Computer Aided Measurements II |
-|  Week 6  | Lab 5: Op Amps I |
-|  Week 7  | No LAB: Spring Break |
-|  Week 8  | Lab 6: Op Amps II |
-|  Week 9  | Lab 7: Active Filters with Op Amps |
-|  Week 10 | Lab 8: Sampling, Quantization, and Signal Processing with Matlab |
-|  Week 11 | NO LAB: Midterm Recess |
-|  Week 12 | Lab 9: Pulse Oximeter Design |
-|  Week 13 | Lab 9, cont'd. |
-|  Week 14 | Lab 9, cont'd. |
-|  Week 15 | Lab 9, cont'd. |
+| Week 1   | No Lab |
+| Week 2   | No Lab |
+| Week 3   | Lab 1: Basic Electrical Measurements |
+| Week 4   | Lab 2: AC Signals and Measurements |
+| Week 5   | Lab 3: Computer Aided Measurements I |
+| Week 6   | Lab 4: Computer Aided Measurements II |
+| Week 7   | Lab 5: Op Amps I |
+| Week 8   | Lab 6: Op Amps II |
+| Week 9   | Lab 7: Transducer Amplifiers |
+| Week 10  | No Lab - Spring Break |
+| Week 11  | Lab 8: Signal Processing |
+| Week 12  | Lab 9: Designing a Pulse Oximeter |
+| Week 13  | Lab 9 cont'd |
+| Week 14  | Lab 9 cont'd |
+| Week 15  | Lab 9 cont'd |
 
 ------------------------------------------------------------------------
 
 ### Lab Groups
 
-In lab (and outside lab as well) you will work in a team of two people,
-and responsibilities should be shared among both members. Lab grades
+In lab (and outside lab as well) you will work in a team of two or three people,
+and responsibilities should be shared across all members. Lab grades
 will be given on a per group basis, rather than individually.
