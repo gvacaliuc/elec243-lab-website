@@ -27,9 +27,9 @@ templates will be provided.
 
 Here are links to lab report templates and useful guidelines:
 
-* [Word Template](../resources/ELEC240_LabReportTemplate.docx)
+* [Word Template](../resources/ELEC243_LabReportTemplate.docx)
 * [Getting Started with LaTeX](../resources/getting-started-with-latex.pdf)
-* [LaTeX Template](../resources/ELEC240_LabReportTeXTemplate.tex)
+* [LaTeX Template](../resources/ELEC243_LabReportTeXTemplate.tex)
 * ["Writing Lab Reports" Presentation](../resources/ELEC240_Slides.pdf)
 * [Report Guidelines Handout](../resources/ELEC240_Handout.pdf)
-* [Grading Rubric](../resources/ELEC240_GradingRubric.pdf)
+* [Grading Rubric](../resources/ELEC243_GradingRubric.pdf)
