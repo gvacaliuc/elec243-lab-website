@@ -21,9 +21,7 @@ report provides a mechanism for evaluating your performance.
 
 ### The Report Itself
 
-Each lab group will turn in a single report into the window dropbox in
-Abercrombie A141. Lab reports may be written in Word or LaTeX. Both
-templates will be provided.
+Each lab team will turn in a single report on Canvas on the day of their next lab session at noon. Lab reports may be written in Word or LaTeX. Both templates will be provided.
 
 Here are links to lab report templates and useful guidelines:
 
