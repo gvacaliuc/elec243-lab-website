@@ -10,8 +10,8 @@ Optoelectronic Transducers
 
 ### Components
 
--   [Photodiode](figs/photo_diode.jpg)
--   [Red Light Emitting Diode](figs/red_led.jpg)
+-   [Photodiode](../figs/photo_diode.jpg)
+-   [Red Light Emitting Diode](../figs/red_led.jpg)
 
 Last week we used the photodiode to measure the ambient illumination
 level and other apparantly DC values. In fact the light in the lab has a
@@ -40,7 +40,7 @@ Set up the oscilloscope to display 0.2V/div and time/div to 2ms.
 #### Step 2:
 
 Connect the short lead (cathode) of the
-[photodiode](figs/photo_diode.jpg) to ground and the long lead (anode)
+[photodiode](../figs/photo_diode.jpg) to ground and the long lead (anode)
 to `CH1` of the scope. You can use the BNC clip leads for this, but a
 better way (which leaves your hands free) is to plug it into the
 breadboard and wire it to the socket strip on the [interface
@@ -48,7 +48,7 @@ board](../unilab/interface.html#interface_socket). (With the interface
 board connected as described above, pin 1 will be `CH1` and pin 14 will
 be ground.)
 
-![](figs/photo2.3.1a1.jpg)
+![](../figs/photo2.3.1a1.jpg)
 
 #### Step 3:
 
@@ -119,7 +119,7 @@ allow Ohm's law to give us a proportional voltage.
 | #### Step 2:             |                          | Using a 220 ohm          |
 |                          |                          | (red-red-brown) resistor |
 |                          |                          | and your [red            |
-|                          |                          | LED](figs/red_led.jpg),  |
+|                          |                          | LED](../figs/red_led.jpg),  |
 |                          |                          | wire the following       |
 |                          |                          | circuit.                 |
 |                          |                          | ![\\includegraphics\[sca |
@@ -130,7 +130,7 @@ allow Ohm's law to give us a proportional voltage.
 |                          |                          | First wire the resistor  |
 |                          |                          | and LED on the           |
 |                          |                          | breadboard.              |
-|                          |                          | ![](figs/photo2.3.2a2.jp |
+|                          |                          | ![](../figs/photo2.3.2a2.jp |
 |                          |                          | g)                       |
 |                          |                          | There are two ways to    |
 |                          |                          | connect the power supply |
@@ -138,11 +138,11 @@ allow Ohm's law to give us a proportional voltage.
 |                          |                          | or the other, not both): |
 |                          |                          | **The first way:** Plug  |
 |                          |                          | your [BNC-banana         |
-|                          |                          | adapter](figs/banana_ada |
+|                          |                          | adapter](../figs/banana_ada |
 |                          |                          | pter.jpg)                |
 |                          |                          | into the 6V supply       |
 |                          |                          | terminals.               |
-|                          |                          | ![](figs/dc_bnc.jpg)     |
+|                          |                          | ![](../figs/dc_bnc.jpg)     |
 |                          |                          |   ---------------------- |
 |                          |                          | ------------------------ |
 |                          |                          | ------------------------ |
@@ -164,7 +164,7 @@ allow Ohm's law to give us a proportional voltage.
 |                          |                          | Then use the clip leads  |
 |                          |                          | to connect to the LED    |
 |                          |                          | and resistor.            |
-|                          |                          | ![](figs/photo2.3.2c2.jp |
+|                          |                          | ![](../figs/photo2.3.2c2.jp |
 |                          |                          | g)                       |
 |                          |                          | **The other way:** Use   |
 |                          |                          | the BNC adapter as       |
@@ -177,7 +177,7 @@ allow Ohm's law to give us a proportional voltage.
 |                          |                          | 14) to the LED and the   |
 |                          |                          | J1-3 signal (pin 3) to   |
 |                          |                          | the resistor.            |
-|                          |                          | ![](figs/photo2.3.2d2.jp |
+|                          |                          | ![](../figs/photo2.3.2d2.jp |
 |                          |                          | g)                       |
 +--------------------------+--------------------------+--------------------------+
 | #### Step 3:             |                          | Turn on the power        |
@@ -264,7 +264,7 @@ both Parts we can create an optical communication link.
 |                          |                          | BNC clip leads. Connect  |
 |                          |                          | the photodiode to the    |
 |                          |                          | clip leads.              |
-|                          |                          | ![](figs/photo2.3.3a.jpg |
+|                          |                          | ![](../figs/photo2.3.3a.jpg |
 |                          |                          | )                        |
 +--------------------------+--------------------------+--------------------------+
 | #### Step 2:             |                          | With the LED still       |
