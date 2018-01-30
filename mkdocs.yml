@@ -23,14 +23,14 @@ pages:
   - {Grounds and Grounding: lab1/interlude.md}
   - {The Oscilloscope and Function Generator: lab1/experiment_1-2.md}
   - {Cleaning Up: lab1/postlude.md}
-#- Lab 2:
-  #- {Home: lab2/index.md}
-  #- {Background: lab2/background.md}
-  #- {Before You Begin: lab2/before-you-begin.md}
-  #- {Electroacoustic Transducers I: lab2/experiment_2-1.md}
-  #- {The Breadboard: lab2/breadboard.md}
-  #- {Electroacoustic Transducers II: lab2/experiment_2-2.md}
-  #- {Optoelectronic Signal Sources and Sinks: lab2/experiment_2-3.md}
+- Lab 2:
+  - {Home: lab2/index.md}
+  - {Introduction: lab2/introduction.md}
+  - {Before Lab: lab2/before-lab.md}
+  - {Measuring Heat and Light: lab2/experiment_2-1.md}
+  - {The Breadboard: lab2/breadboard.md}
+  - {Electroacoustic Transducers II: lab2/experiment_2-2.md}
+  - {Optoelectronic Signal Sources and Sinks: lab2/experiment_2-3.md}
 #- Lab 3:
   #- {Home: lab3/index.md}
   #- {Introduction: lab3/introduction.md}
