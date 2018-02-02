@@ -31,12 +31,12 @@ pages:
   - {The Breadboard: lab2/breadboard.md}
   - {Electroacoustic Transducers II: lab2/experiment_2-2.md}
   - {Optoelectronic Signal Sources and Sinks: lab2/experiment_2-3.md}
-#- Lab 3:
-  #- {Home: lab3/index.md}
-  #- {Introduction: lab3/introduction.md}
-  #- {Resistive Voltage Dividers: lab3/experiment_3-1.md}
-  #- {Measuring the Transfer Function: lab3/interlude.md}
-  #- {Filters and Transfer Function: lab3/experiment_3-2.md}
+- Lab 3:
+  - {Home: lab3/index.md}
+  - {Introduction: lab3/introduction.md}
+  - {Background: lab3/background.md}
+  - {Voltage and Waveform Measurements: lab3/experiment_3-1.md}
+  - {Writing a Labview Program: lab3/experiment_3-2.md}
 #- Lab 4:
   #- {Home: lab4/index.md}
   #- {Introduction: lab4/introduction.md}
