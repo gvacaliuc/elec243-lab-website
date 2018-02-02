@@ -16,20 +16,18 @@ Voltage and Waveform Measurements
 
 ### Part A: Basic A/D Conversion
 
-- Connect the [cable](../figs/daq_cable.jpg) from the DAQ card to J3-1
-on the rightmost interface module. It should look like this:
-
-![](../figs/daq_conn.jpg)
+- Connect the [cable](../figs/daq.jpg) from the DAQ card to J3-1
+on the rightmost interface module. 
 
 - Plug your [BNC-banana adapter](../figs/banana_adapter.jpg) into the 6V
 supply terminals. There is a bump on one side of the adapter to denote
 which prong is connected to ground. Be sure to plug this prong into the
 black terminal of the power supply.
 
-- Using a BNC patch cable, connect the 6 V supply output to J1-3.
+- Using a BNC patch cable terminated with a BNC-to-banana adapter, connect the 6 V supply output to J1-3.
 
 - Connect J1-3 (pin 3) to A/D channel 4 (pin 46). (The pin numbers
-correspond to the interface section of the breadboard).
+correspond to the upper rows of the breadboard where the interface connections are). The circuit you have just created looks like this:
 
 ![\\includegraphics\[scale=0.500000\]{ckt4.1.2.ps}](img225.png){width="323"
 height="144"}
