@@ -1,12 +1,6 @@
-ELEC 240 Lab
+# Experiment 2.3
 
-------------------------------------------------------------------------
-
-Experiment 2.3
---------------
-
-Optoelectrical Signal Sources and Sinks
----------------------------------------
+## Optoelectrical Signal Sources and Sinks
 
 Since we will be building an optical communication system, we will need
 some devices for converting electrical signals to and from light, as
