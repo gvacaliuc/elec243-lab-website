@@ -1,9 +1,4 @@
-ELEC 243 Lab
-
-------------------------------------------------------------------------
-
-Your Lab Report
-===============
+# Your Lab Report
 
 A lab report serves several functions. In industry it serves as a legal
 document to establish priority of invention in patent disputes. While we
@@ -21,7 +16,9 @@ report provides a mechanism for evaluating your performance.
 
 ### The Report Itself
 
-Each lab team will turn in a single report on Canvas on the day of their next lab session at noon. Lab reports may be written in Word or LaTeX. Both templates will be provided.
+Each lab team will turn in a single report on Canvas on the day of their next
+lab session at noon. Lab reports may be written in Word or LaTeX. Both
+templates will be provided.
 
 Here are links to lab report templates and useful guidelines:
 
