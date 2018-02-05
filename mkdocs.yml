@@ -23,20 +23,20 @@ pages:
   - {Grounds and Grounding: lab1/interlude.md}
   - {The Oscilloscope and Function Generator: lab1/experiment_1-2.md}
   - {Cleaning Up: lab1/postlude.md}
-#- Lab 2:
-  #- {Home: lab2/index.md}
-  #- {Background: lab2/background.md}
-  #- {Before You Begin: lab2/before-you-begin.md}
-  #- {Electroacoustic Transducers I: lab2/experiment_2-1.md}
-  #- {The Breadboard: lab2/breadboard.md}
-  #- {Electroacoustic Transducers II: lab2/experiment_2-2.md}
-  #- {Optoelectronic Signal Sources and Sinks: lab2/experiment_2-3.md}
-#- Lab 3:
-  #- {Home: lab3/index.md}
-  #- {Introduction: lab3/introduction.md}
-  #- {Resistive Voltage Dividers: lab3/experiment_3-1.md}
-  #- {Measuring the Transfer Function: lab3/interlude.md}
-  #- {Filters and Transfer Function: lab3/experiment_3-2.md}
+- Lab 2:
+  - {Home: lab2/index.md}
+  - {Introduction: lab2/introduction.md}
+  - {Before Lab: lab2/before-lab.md}
+  - {Measuring Heat and Light: lab2/experiment_2-1.md}
+  - {The Breadboard: lab2/breadboard.md}
+  - {Electroacoustic Transducers II: lab2/experiment_2-2.md}
+  - {Optoelectronic Signal Sources and Sinks: lab2/experiment_2-3.md}
+- Lab 3:
+  - {Home: lab3/index.md}
+  - {Introduction: lab3/introduction.md}
+  - {Background: lab3/background.md}
+  - {Voltage and Waveform Measurements: lab3/experiment_3-1.md}
+  - {Writing a Labview Program: lab3/experiment_3-2.md}
 #- Lab 4:
   #- {Home: lab4/index.md}
   #- {Introduction: lab4/introduction.md}
