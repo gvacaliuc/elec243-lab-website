@@ -8,8 +8,8 @@
 
 ### Part A: Basic A/D Conversion
 
-1. Connect the [cable](../misc_images/#daq-cable) from the DAQ card to J3-1 on the
-   rightmost interface module.
+1. Connect the [cable](../misc_images/#daq-cable) from the DAQ card to J3-1 on
+   the rightmost interface module.
 
 2. Plug your [BNC-banana adapter](../misc_images/#banana-adapter) into the 6V
    supply terminals. There is a bump on one side of the adapter to denote which
