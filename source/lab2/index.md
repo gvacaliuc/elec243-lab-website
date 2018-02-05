@@ -1,13 +1,10 @@
-# Laboratory 2
-
-## AC Signals and Measurements
+# Lab 2: AC Signals and Measurements
 
 ### [Introduction](./introduction)
 
 ### [Before Lab](./before-lab)
 
-Experiments
------------
+### Experiments
 
 * Experiment 2.1: [Measuring Heat and Light](./experiment_2-1)
 * Interlude: [The Breadboard](./breadboard)
