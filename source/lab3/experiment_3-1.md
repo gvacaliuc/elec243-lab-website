@@ -8,22 +8,20 @@
 
 ### Part A: Basic A/D Conversion
 
-1. Connect the [cable](./figs/daq_cable.jpg) from the DAQ card to J3-1 on the
-   rightmost interface module. It should look like this:
-
-    <center>
-    ![](./figs/daq_conn.jpg)
-    </center>
+1. Connect the [cable](../misc_images/#daq-cable) from the DAQ card to J3-1 on the
+   rightmost interface module.
 
 2. Plug your [BNC-banana adapter](../misc_images/#banana-adapter) into the 6V
    supply terminals. There is a bump on one side of the adapter to denote which
    prong is connected to ground. Be sure to plug this prong into the black
    terminal of the power supply.
 
-3. Using a BNC patch cable, connect the 6 V supply output to J1-3.
+3. Using a BNC patch cable terminated with a BNC-to-banana adapter, connect the
+   6 V supply output to J1-3.
 
 4. Connect J1-3 (pin 3) to A/D channel 4 (pin 46). (The pin numbers correspond
-   to the interface section of the breadboard).
+   to the upper rows of the breadboard where the interface connections are).
+   The circuit you have just created looks like this:
 
     <center>
     ![](./figs/img225.png)
