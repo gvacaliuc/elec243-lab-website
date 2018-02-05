@@ -32,8 +32,9 @@
         the DAQ card is made automatically. We will not show the DAQ card
         ground in subsequent drawings. 
 
-5.  Download [Basic_ADC.vi](./Basic_ADC.vi) and open in Labview. It should look
-    like this:
+5.  Download
+    [Basic_ADC.vi](https://github.com/gvacaliuc/elec243-lab-website/raw/master/source/lab3/Basic_ADC.vi)
+    and open in Labview. It should look like this:
 
     <center>
     ![](./figs/Basic_ADC_screenshot.jpg)
