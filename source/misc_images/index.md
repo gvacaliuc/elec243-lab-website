@@ -38,3 +38,6 @@
 
 ### BNC Patch Cables
 ![BNC PATCH CABLES](../figs/bnc_patch.jpg)
+
+### DAQ Cable
+![DAQ Cable](../figs/daq.jpg)

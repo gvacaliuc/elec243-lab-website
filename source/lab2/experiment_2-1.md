@@ -9,7 +9,7 @@
 
 ### Components
 
-* [Thermistor](https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Sensors%20PDFs/ERTD_Series.pdf)
+* [$10K$ Thermistor](https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Sensors%20PDFs/ERTD_Series.pdf)
 * [CdS Photocell](https://media.digikey.com/pdf/Data%20Sheets/Photonic%20Detetectors%20Inc%20PDFs/PDV-P9001.pdf)
 * [Photodiode](http://www.ttelectronics.com/sites/default/files/download-files/OP905-906_1.pdf)
 
@@ -36,16 +36,16 @@ K).
 
 2. Connect the clip leads to the terminals of the thermistor. 
 
-3. Wait until the resistance reading on the DMM has stabilized, and record the
-   value. This represents the ambient room temperature. 
+3. Wait until the resistance reading on the DMM has stabilized, and record this
+   value $R_0$. This is the ambient room temperature, $T_0$.
 
 4. Place the thermistor in contact with your body. **When the resistance
-   reading has stabilized, record the value.**
+   reading has stabilized, record the value $R$.**
 
-5. **Based on the nominal values for resistance and $B$ value, what are the
-   ambient temperature and your (or your lab partner's) body temperature?**
-
-
+5. Estimate the ambient temperature in the room. Using your measurements and B
+   value (see [thermistor
+   datasheet](https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Sensors%20PDFs/ERTD_Series.pdf)),
+   what is your body temperature?
 
 ### Part B: CdS Photocell
 

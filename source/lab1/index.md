@@ -1,4 +1,4 @@
-# Basic Electrical Measurements
+# Lab 1: Basic Electrical Measurements
 
 Compared with our colleagues in other branches of engineering, we ECEs
 are at something of a disadvantage in that we can't *directly* see what
@@ -10,7 +10,7 @@ to make things visible.
 * [Safety](./safety)
 * [Background](./background)
 
-## Experiments
+### Experiments
 
 * Experiment 1.1: [DC Measurements: the DMM](./experiment_1-1)
 * Interlude: [Grounds and Grounding](./interlude)

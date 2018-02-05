@@ -1,9 +1,4 @@
-ELEC 243 Lab
-
-------------------------------------------------------------------------
-
-Your Lab Report
-===============
+# Your Lab Report
 
 A lab report serves several functions. In industry it serves as a legal
 document to establish priority of invention in patent disputes. While we
@@ -21,15 +16,15 @@ report provides a mechanism for evaluating your performance.
 
 ### The Report Itself
 
-Each lab group will turn in a single report into the window dropbox in
-Abercrombie A141. Lab reports may be written in Word or LaTeX. Both
+Each lab team will turn in a single report on Canvas on the day of their next
+lab session at noon. Lab reports may be written in Word or LaTeX. Both
 templates will be provided.
 
 Here are links to lab report templates and useful guidelines:
 
-* [Word Template](../resources/ELEC240_LabReportTemplate.docx)
+* [Word Template](../resources/ELEC243_LabReportTemplate.docx)
 * [Getting Started with LaTeX](../resources/getting-started-with-latex.pdf)
-* [LaTeX Template](../resources/ELEC240_LabReportTeXTemplate.tex)
+* [LaTeX Template](../resources/ELEC243_LabReportTeXTemplate.tex)
 * ["Writing Lab Reports" Presentation](../resources/ELEC240_Slides.pdf)
 * [Report Guidelines Handout](../resources/ELEC240_Handout.pdf)
-* [Grading Rubric](../resources/ELEC240_GradingRubric.pdf)
+* [Grading Rubric](../resources/ELEC243_GradingRubric.pdf)
