@@ -35,3 +35,6 @@
 
 ### Battery Pack
 ![Battery Pack](../figs/batt_pack.jpg)
+
+### DAQ Cable
+![DAQ Cable](../figs/daq.jpg)
