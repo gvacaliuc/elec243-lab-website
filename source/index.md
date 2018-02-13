@@ -12,7 +12,7 @@
 * Lab 1: [Basic Electrical Measurements](./lab1)
 * Lab 2: [AC Signals and Measurements](./lab2)
 * Lab 3: [Computer Aided Measurements I](./lab3)
-* Lab 4: [Computer Aided Measurements II](./lab4)
+* Lab 4: [Computer Aided Measurements II](./lab4/)
 * Lab 5: [Op Amps I](./lab5)
 * Lab 6: [Op Amps II](./lab6)
 * Lab 7: [Active Filters with Op Amps](./lab7)
