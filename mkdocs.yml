@@ -37,15 +37,11 @@ pages:
   - {Background: lab3/background.md}
   - {Voltage and Waveform Measurements: lab3/experiment_3-1.md}
   - {Writing a Labview Program: lab3/experiment_3-2.md}
-#- Lab 4:
-  #- {Home: lab4/index.md}
-  #- {Introduction: lab4/introduction.md}
-  #- {Before Lab: lab4/before-lab.md}
-  #- {Organizing Your Breadboard: lab4/organizing-your-breadboard.md}
-  #- {The 741 Op-Amp: lab4/experiment_4-1.md}
-  #- {The Inverting Configuration: lab4/experiment_4-2.md}
-  #- {Standard Signal Levels: lab4/standard-signal-levels.md}
-  #- {Transducer Amplifiers: lab4/experiment_4-3.md}
+- Lab 4:
+  - {Home: lab4/index.md}
+  - {Introduction: lab4/introduction.md}
+  - {Labview as a Source of Signals: lab4/experiment_4-1.md}
+  - {Improved Resistance Measurement: lab4/experiment_4-2.md}
 #- Lab 5:
   #- {Home: lab5/index.md}
   #- {Introduction: lab5/introduction.md}
