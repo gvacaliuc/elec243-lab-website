@@ -20,7 +20,7 @@ relationships, including sum, difference, and non-inverted gain.
    $R_F$.
 
     <center>
-    ![](img234.png)
+    ![](./figs/img234.png)
     </center>
 
 2. Set the function generator to produce a 1 $V_{pp}$, 100 Hz sine wave.
@@ -59,7 +59,7 @@ The inverting amplifier configuration we used makes this very easy to do, just
 add another resistor to the inverting (-) input of the op amp:
 
 <center>
-![](img235.png)
+![](./figs/img235.png)
 </center>
 
 A quick analysis shows that $v_{out} = -(\frac{R_F}{R_1}v_1 +
