@@ -73,7 +73,7 @@ a high-brightness red LED in this experiment.
         </center>
 
 2. For convenience we will mount the entire assembly on the breadboard, so use
-   a 2x4 plate as the base and use [1x2 plates](../figs/1x2plate.jpg) for
+   a 2x4 plate as the base and use [1x2 plates](./figs/1x2plate.jpg) for
    vertical height.  
     <center>
     ![](./figs/ed_step1.jpg)
