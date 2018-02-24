@@ -47,12 +47,12 @@ pages:
   - {Introduction: lab5/introduction.md}
   - {The 741 Op-Amp: lab5/experiment_5-1.md}
   - {Voltage Amplifiers: lab5/experiment_5-2.md}
-#- Lab 6:
-  #- {Home: lab6/index.md}
-  #- {Introduction: lab6/introduction.md}
-  #- {Sampling and Quantization: lab6/experiment_6-1.md}
-  #- {Recording a Reference Signal: lab6/experiment_6-2.md}
-  #- {Signal Processing in Matlab: lab6/experiment_6-3.md}
+- Lab 6:
+  - {Home: lab6/index.md}
+  - {Introduction: lab6/introduction.md}
+  - {OpAmp Circuits Part C and D: lab6/experiment_6-1.md}
+  - {Transducer Amplifiers: lab6/experiment_6-2.md}
+
 #- Lab 7:
   #- {Home: lab7/index.md}
   #- {Introduction: lab7/introduction.md}
