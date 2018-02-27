@@ -1,4 +1,4 @@
-# Experiment 7.1
+# Experiment 6.2
 
 ## Frequency Response
 
