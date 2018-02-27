@@ -107,7 +107,7 @@ transresistance converts a current in one part of the circuit to a voltage in
 another.)
 
 <center>
-![](./figs/img243.jpg)
+![](./figs/img243.png)
 </center>
 
 1. Wire up the photodiode amplifier shown above near the photodiode.  Leave
