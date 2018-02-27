@@ -7,7 +7,7 @@
 * Test board
 * Red LED
 * Photodiode
-* Lego pieces - (2) 1x2 beams, (1) 2x4, (2) 1x2 plates (see below for pics)
+* Lego pieces (2) 1x2 beams, (2) 2x4 pieces
 * 3 LM741 opamps
 * 100$\Omega$, 10$\Omega$, 1.5$k\Omega$, 2 100$k\Omega$, 2.2$k\Omega$
 
@@ -37,12 +37,7 @@ communication system we want to maximize the achievable distance between
 transmitter and receiver and our main concern about the space between them is
 that it cause as little attenuation to the transmitted signal as possible.
 
-Another class of applications precisely fixes the transmitter and receiver and
-attempts to deduce information about the material between them by measuring the
-attenuation. Any actual information transmitted is purely incidental.
-
-Today we will assemble the components into a convenient, mechanically stable
-package and provide additional circuitry to improve the linearity and
+Today we will provide additional circuitry to improve the linearity and
 sensitivity of the resulting emitter-detector pair.
 
 ### Part A: An Emitter-Detector Pair
@@ -53,35 +48,21 @@ emitter-detector pairs require a precisely fixed distance between the
 transmitter and receiver. Our first step will be to build the mechanical
 structure to house our emitter and detector.
 
-We will use Legos to create our mechanical structure. Use the [1x2
-beam](./figs/1x2beam.jpg), to mount the photodiodes and LEDs. We will be using
+We will use Legos to create our mechanical structure (see figure below for final structure). Use the 1x2 beam to mount the photodiodes and LEDs. We will be using
 a high-brightness red LED in this experiment.
 
-1. Press the LED into the hole in a 1x2 beam. The leads should be arranged
-   parallel to the long axis of the block:
-
-    <center>
-    ![](./figs/lego_led.jpg)
-    </center>
+1. Press the LED into the hole in a 1x2 beam, and the photodiode into another 1x2 beam.
 
     !!! tip
         If the photodiode is a bit too small to fit into the Lego hole, cut a
         strip of paper and wrap around the photodiode before inserting into the
         block.
-        <center>
-        ![](./figs/lego_pd.jpg)
-        </center>
-
+        
 2. For convenience we will mount the entire assembly on the breadboard, so use
-   a 2x4 plate as the base and use [1x2 plates](./figs/1x2plate.jpg) for
+   a 2x4 plate as the base and use 1x2 plates for
    vertical height.  
-    <center>
-    ![](./figs/ed_step1.jpg)
-    ![](./figs/ed_step2.jpg)
-    </center>
 
-3. Bend the leads of the photodiode and LED downward and twist each pair by
-   $45^\circ$. Position the assembly in the center of the breadboard with the
+3. Bend the leads of the photodiode and LED downward so they will fit into the breadboard. Position the assembly in the center of the breadboard with the
    LED on the left and plug in the leads.
     <center>
     ![](./figs/ed_pair.jpg)
