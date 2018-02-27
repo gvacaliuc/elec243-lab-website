@@ -35,18 +35,18 @@ input).
    output signal exhibit that salient feature. If you use cursors, the
    difference between cursor points should appear below the oscilloscope
    window. Make sure you zoom in each time you increase frequency, to ensure
-   similar accuracy of values. Phase is $(\delta-t)*2*pi/T$, where $T$ is the
+   similar accuracy of values. Phase is $(\Delta-t)*2*pi/T$, where $T$ is the
    period.
 
 5. Plot Gain(dB) vs. Frequency (Hz) in Matlab.
 
     !!! tip
-        $\text{gain (db) } = 20\*log_10(V_{out} / V_{in})$
+        $\text{gain (db) } = 20*log_{10}(V_{out} / V_{in})$
 
 6. At what frequency does the gain begin to drop?
 
-7. This is called the cutoff frequency fc **does it roughly equal $f_c=1/(2 *
-   \pi * R_5 * C_2)$?**
+7. This is called the cutoff frequency, $f_c$, **does it roughly equal
+   $f_c=1/(2 * \pi * R_5 * C_2)$?**
 
 ### Part B: Circuit Simulation
 
