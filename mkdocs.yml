@@ -51,8 +51,8 @@ pages:
 - Lab 6:
   - {Home: lab6/index.md}
   - {Introduction: lab6/introduction.md}
-  - {OpAmp Circuits Part C and D: lab6/experiment_6-1.md}
-  - {Transducer Amplifiers: lab6/experiment_6-2.md}
+  - {Transducer Amplifiers: lab6/experiment_6-1.md}
+  - {Frequency Response: lab6/experiment_6-2.md}
 #- Lab 7:
   #- {Home: lab7/index.md}
   #- {Introduction: lab7/introduction.md}
