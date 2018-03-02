@@ -1,19 +1,9 @@
-ELEC 240 Lab
-
-------------------------------------------------------------------------
-
-Laboratory 6
-============
-
-Digital Signal Processing
-=========================
+# Lab 7: Digital Signal Processing
 
 ### [Introduction](./introduction)
 
-Experiments
------------
+### Experiments
 
-* Experiment 6.1: [Sampling and Quantization](./experiment_6-1)
-* Experiment 6.2: [Recording a Reference Signal](./experiment_6-2)
-* Experiment 6.3: [Signal Processing in Matlab](./experiment_6-3)
-
+* Experiment 7.1: [Sampling and Quantization](./experiment_7-1)
+* Experiment 7.2: [Recording a Reference Signal](./experiment_7-2)
+* Experiment 7.3: [Signal Processing in Matlab](./experiment_7-3)

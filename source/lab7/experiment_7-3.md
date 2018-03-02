@@ -1,9 +1,6 @@
-ELEC 240 Lab
+# Experiment 7.3
 
-------------------------------------------------------------------------
-
-Experiment 7.3
-==============
+## Signal Processing in Matlab
 
 ### Equipment
 

@@ -1,9 +1,4 @@
-ELEC 240 Lab
-
-------------------------------------------------------------------------
-
-Introduction
-============
+# Introduction
 
 Voltages in a circuit (so-called analog signals) are continuous, whereas the
 sequence of numbers in the computer with which we are representing it is

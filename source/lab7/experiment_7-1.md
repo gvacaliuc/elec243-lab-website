@@ -1,12 +1,6 @@
-ELEC 240 Lab
+# Experiment 7.1
 
-------------------------------------------------------------------------
-
-Experiment 7.1
---------------
-
-Sampling and Quantization
--------------------------
+## Sampling and Quantization
 
 ### Equipment
 

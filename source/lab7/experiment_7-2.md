@@ -1,9 +1,6 @@
-ELEC 240 Lab
+# Experiment 7.2
 
-------------------------------------------------------------------------
-
-Experiment 7.2
---------------
+## Recording a Reference Signal 
 
 The first step in batch processing is to record the input signal as a disk
 file. We will use a Labview program to do this, then use Matlab to do the
