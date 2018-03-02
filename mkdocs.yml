@@ -53,10 +53,12 @@ pages:
   - {Introduction: lab6/introduction.md}
   - {Transducer Amplifiers: lab6/experiment_6-1.md}
   - {Frequency Response: lab6/experiment_6-2.md}
-#- Lab 7:
-  #- {Home: lab7/index.md}
-  #- {Introduction: lab7/introduction.md}
-  #- {Digital Logic: lab7/experiment_7-1.md}
+- Lab 7:
+  - {Home: lab7/index.md}
+  - {Introduction: lab7/introduction.md}
+  - {Sampling and Quantization: lab7/experiment_7-1.md}
+  - {Recording a Reference Signal: lab7/experiment_7-2.md}
+  - {Signal Processing in Matlab: lab7/experiment_7-3.md}
 #- Lab 8:
   #- {Home: lab8/index.md}
   #- {Introduction: lab8/introduction.md}
