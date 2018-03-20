@@ -16,7 +16,7 @@
 * Lab 5: [Op Amps I](./lab5/)
 * Lab 6: [Op Amps II](./lab6/)
 * Lab 7: [Digital Signal Processing](./lab7/)
-* Lab 8: [Sampling, Quantization, and Signal Processing](./lab8/)
+* Lab 8: [Digital Logic](./lab8/)
 * Final Lab: [Designing a Pulse Oximeter](./final-lab)
 
 ## References
