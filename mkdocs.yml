@@ -59,12 +59,10 @@ pages:
   - {Sampling and Quantization: lab7/experiment_7-1.md}
   - {Recording a Reference Signal: lab7/experiment_7-2.md}
   - {Signal Processing in Matlab: lab7/experiment_7-3.md}
-#- Lab 8:
-  #- {Home: lab8/index.md}
-  #- {Introduction: lab8/introduction.md}
-  #- {Building a Velleman Kit: lab8/soldering.md}
-  #- {Report: lab8/report.md}
-  #- {Sign Off Sheet: lab8/sign-off-sheet.md}
+- Lab 8:
+  - {Home: lab8/index.md}
+  - {Introduction: lab8/introduction.md}
+  - {Digital Logic: lab8/experiment_8-1.md}
 #- Final Lab:
   #- {Home: final-lab/index.md}
   #- {Introduction: final-lab/introduction.md}
