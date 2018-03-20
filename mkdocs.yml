@@ -63,11 +63,7 @@ pages:
   - {Home: lab8/index.md}
   - {Introduction: lab8/introduction.md}
   - {Digital Logic: lab8/experiment_8-1.md}
-#- Final Lab:
-  #- {Home: final-lab/index.md}
-  #- {Introduction: final-lab/introduction.md}
-  #- {Project Specification : final-lab/project-specification.md}
-  #- {Deliverables: final-lab/deliverables.md}
+- Final Lab: ./finallab.md
 - Miscellanous Images:
   - {Home: misc_images/index.md}
 docs_dir: ./source
