@@ -1,12 +1,6 @@
-ELEC 243 Lab
+# Final Lab
 
-------------------------------------------------------------------------
-
-Final Lab
-=========
-
-Designing a Pulse Oximeter
-==========================
+## Designing a Pulse Oximeter
 
 ### Description
 
@@ -40,72 +34,63 @@ pulse oximeter with a Labview user interface.
 
 ### Design Steps
 
-1.   Draw a pin diagram of the finger sensor as it relates to the breadboard
-     interface pins.
-1.   Build an LED driver circuit to alternately drive the red LED and IR LED by
-     modifying the LED driver from Lab 6. (No need for a current1.sensing
-     resistor).  o Test your circuit using two through1.hole LEDs and the
-     VirtualBench frequency generator o Consider the Nyquist criterion when
-     selecting the Vdrive frequency. You want to ensure detection of heart
-     rate.
-1.   Build a photodiode amplifier circuit o Do not include the DC blocking
-     capacitor, given that the heart rate is a low frequency that could get
-     blocked out.  o Include filtering capability (see Lab 7) to create a
-     lowpass filter to eliminate 601.Hz power line noise
-1.   Test your circuits with the finger sensor using the VirtualBench function
-     generator and oscilloscope
-1.   Set up the inputs and outputs for your Labview interface o Generate the
-     Vdrive signal in Labview o Acquire the photodiode circuit output into
-     Labview
-1.   Design a way to distinguish between the red LED component and the IR LED
-     component of your signal
-1.   Determine SpO2 level by [computing the ratio
-     R](./resources/R_Calculation.pdf) and comparing to
-     [data](./resources/R_SPO2_Data.txt).
-1.   5% Extra credit: output heart rate
+1. Draw a pin diagram of the finger sensor as it relates to the breadboard
+   interface pins.
+1. Build an LED driver circuit to alternately drive the red LED and IR LED by
+   modifying the LED driver from Lab 6. (No need for a current1.sensing
+   resistor).
+1. Test your circuit using two through1.hole LEDs and the VirtualBench
+   frequency generator 
+1. Consider the Nyquist criterion when selecting the Vdrive frequency. You
+   want to ensure detection of heart rate.
+1. Build a photodiode amplifier circuit 
+1. Do not include the DC blocking capacitor, given that the heart rate is a
+   low frequency that could get blocked out.
+1. Include filtering capability (see Lab 7) to create a lowpass filter to
+   eliminate 60Hz power line noise
+1. Test your circuits with the finger sensor using the VirtualBench function
+   generator and oscilloscope
+1. Set up the inputs and outputs for your Labview interface 
+1. Generate the Vdrive signal in Labview 
+1. Acquire the photodiode circuit output into Labview
+1. Design a way to distinguish between the red LED component and the IR LED
+   component of your signal
+1. Determine SpO2 level by 
+   [computing the ratio R](./resources/R_Calculation.pdf) and comparing to
+   [data](./resources/R_SPO2_Data.txt).
+1. 5% Extra credit: output heart rate
 
 ### Final Report Guidelines
 
 #### Project summary or abstract, which should include:
 
 * A brief definition of pulse oximetry and its application (2-3 sentences).
-
 * The functionality of your pulse oximeter
-
 * Were results as expected?
 
 #### Design Procedure
 
 * Schematic and its description (i.e., why certain components were chosen)
-
 * Labview block diagram screenshot and its description
-
 * Screenshots and description of inputs and outputs, i.e., input and output of
-  emitter-detect*r, output of Labview
+  emitter-detector, output of Labview
 
 #### Testing
 
 * SpO2 and pulse rate data for at least three people
-
 * As expected? If not, where might things have gone wrong? How did you try to
-fix it?
+  fix it?
 
 #### Conclusion
 
 * Did your design meet your goals?
-
 * What could be improved?
 
 ### Final Project Demo
 
-Maximum 10 minutes
-
-At least 2 group members need to be present for the demo
-
+* Maximum 10 minutes
+* At least 2 group members need to be present for the demo
 * Provide a picture of the schematic and walk your labbie/instructor through it
-
 * Show the LabView block diagram and explain how it works
-
 * Demo the pulse ox
-
 * Explain how you, as a team, divided up the work amongst yourselves
