@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>DC Measurements: the DMM - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "DC Measurements: the DMM";
+    var mkdocs_page_input_path = "lab1/experiment_1-1.md";
+    var mkdocs_page_url = "/lab1/experiment_1-1/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../background/">Background</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">DC Measurements: the DMM</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#experiment-11">Experiment 1.1</a></li>
+    
+
+    <li class="toctree-l3"><a href="#dc-measurements-the-dmm">DC Measurements: the DMM</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#equipment">Equipment</a></li>
+        
+            <li><a class="toctree-l4" href="#part-a-measuring-voltage-with-the-dmm">Part A: Measuring Voltage with the DMM</a></li>
+        
+            <li><a class="toctree-l4" href="#part-b-measuring-current-with-the-dmm">Part B: Measuring Current with the DMM</a></li>
+        
+            <li><a class="toctree-l4" href="#part-c-measuring-resistance-with-the-dmm">Part C: Measuring Resistance with the DMM</a></li>
+        
+            <li><a class="toctree-l4" href="#part-d-measuring-the-i-v-characteristics-of-the-light-bulb">Part D: Measuring the I-V Characteristics of the Light Bulb</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 1 &raquo;</li>
+        
+      
+    
+    <li>DC Measurements: the DMM</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>ELEC 243 Lab</p>
+<hr />
+<h2 id="experiment-11">Experiment 1.1</h2>
+<h2 id="dc-measurements-the-dmm">DC Measurements: the DMM</h2>
+<h3 id="equipment">Equipment</h3>
+<ul>
+<li><a href="../../misc_images/#battery-pack">Battery Pack and Batteries</a></li>
+<li>Lightbulb Socket Board</li>
+<li>Digital Multimeter</li>
+<li>Banana Plug Patch Cords</li>
+</ul>
+<h3 id="part-a-measuring-voltage-with-the-dmm">Part A: Measuring Voltage with the DMM</h3>
+<ol>
+<li>
+<p>Turn on the digital multimeter (DMM) to the setting for DC volts
+   measurement:<br />
+<img alt="" src="../figs/fluke73a.jpg" /></p>
+</li>
+<li>
+<p>Make sure the negative (black) lead is plugged into the COM terminal and the
+   positive (red) lead is plugged into the V terminal, as shown in the picture.
+   COM stands for common, or in other words, the termin al that is the point of
+   reference for other terminals.</p>
+</li>
+<li>
+<p><strong>Measure the voltage of each battery</strong> by holding the positive probe
+   against the top of the battery and the negative probe against the bottom.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In measuring voltage, we are always measuring the <em>difference in potential</em>
+between two nodes. So the meter is always connected across two points.</p>
+</div>
+</li>
+<li>
+<p>Place the two batteries into the holder in the orientation indicated.
+   <strong>Measure the voltage of the battery pack. It should be equal to the sum of
+   the two batteries. Is it?</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be careful not to short the two leads of the battery pack together once the
+batteries are installed. To be safe, remove at least one of the batteries when
+the pack is not in use.</p>
+</div>
+</li>
+<li>
+<p>Wire the circuit below by screwing the leads from the battery pack to L and
+   R terminals of the lamp board. The bulb should light (though rather dimly).
+   <strong>Measure the battery voltage again. Is it the same as before?</strong></p>
+</li>
+</ol>
+<p><center>
+    <img alt="" src="../figs/img152.png" />
+   </center></p>
+<h3 id="part-b-measuring-current-with-the-dmm">Part B: Measuring Current with the DMM</h3>
+<p>To measure current, we must connect the meter <em>in series</em> with the
+circuit we are measuring, as in the figure below. This is because
+current flows <em>through</em> a conductor, whereas voltage appears <em>across</em>
+two conductors.</p>
+<p>This is because current flows <em>through</em> a conductor, whereas voltage
+appears <em>across</em> pairs of conductors.</p>
+<p><center>
+<img alt="" src="../figs/img153.png" />
+</center></p>
+<ol>
+<li>
+<p>With the meter disconnected from the circuit, set the function switch to DC
+   current ("A" with straight solid and dashed lines above it). Move the red
+   meter lead to the 300 mA terminal.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>An ammeter must always be connected in series. Connecting an ammeter in
+parallel with a circuit element can pass very large currents through the
+ammeter, blowing its internal fuse or damaging it. A good practice is to always
+reset the DMM to voltage measurement settings after making a current
+measurement.</p>
+</div>
+</li>
+<li>
+<p>Use the NC ('not connected') terminal as a node to connect the positive
+   battery terminal to the positive lead of the DMM.</p>
+</li>
+<li>
+<p><strong>Note the current value displayed on the DMM.</strong></p>
+</li>
+</ol>
+<h3 id="part-c-measuring-resistance-with-the-dmm">Part C: Measuring Resistance with the DMM</h3>
+<ol>
+<li>
+<p>Set the DMM to Ohms (W) and return the positive meter lead to Volts/Ohms
+   terminal. Touch the two probes together. The meter should read zero
+   resistance. If it reads more than a few tenths of an ohm, check for poor
+   connections or have your meter serviced.</p>
+</li>
+<li>
+<p>Select several resistors at random from your parts kit. For each resistor,
+   determine its nominal value from the <a href="../../references/color_code">color code</a>,
+   then measure its resistance by touching one probe to each lead of the
+   resistor. <strong>Do the nominal and measured values agree?</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To read a 4-band resistor color code, view it with the gold/silver band
+to the right. The first two band colors correspond to the first two
+digits of the resistor value and the third band color is the
+multiplier.  The fourth band is the percent tolerance. Tolerance means
+that the actual resistance value is guaranteed to be within the marked
+value specified percent.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To measure resistance, lay the resistor on the bench and test as shown
+below.</p>
+</div>
+<p><center>
+<img alt="" src="../figs/res_meas1.jpg" />
+</center>  </p>
+</li>
+<li>
+<p><strong>What's wrong with holding the leads and probes between your fingers?</strong> </p>
+<p><center>
+<img alt="" src="../figs/res_meas2.jpg" />
+</center></p>
+</li>
+<li>
+<p>The actual resistance <span>\(R\)</span> of a resistor having nominal values <span>\(R_0\)</span> and
+   tolerance <span>\(d\)</span> lies in the range <span>\(R_0(1+d)\)</span>. <strong>What is the tolerance of a series
+   connection of two such resistors? Of a parallel connection?</strong></p>
+</li>
+<li>
+<p>Obtain ten resistors with the same marked value. Measure the resistance of
+   each resistor. <strong>Does your batch have the stated accuracy?</strong></p>
+</li>
+<li>
+<p>Holding one DMM lead in each hand, measure your own resistance. The reading
+   may be unstable, therefore the resolution is limited to the digit that
+   changes least often. <strong>What is the value and resolution of your
+   resistance?</strong></p>
+</li>
+<li>
+<p><strong>Does your resistance change when you wet your fingers? If so, speculate
+   why. What voltage would be necessary to produce a 5mA current through you?</strong>
+   (Why 5mA? Read <a href="../safety">Safety</a>).</p>
+</li>
+<li>
+<p>Using the DMM, <strong>measure the resistance of the light bulb. Does this
+   correspond to the value you would expect from Ohm's Law given the values of
+   voltage and current you measured in Parts A and B?</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The DMM can only measure the resistance of an element when it is
+disconnected from the circuit. Remember to turn off the power source or
+the value measured will be inaccurate.</p>
+</div>
+</li>
+</ol>
+<h3 id="part-d-measuring-the-i-v-characteristics-of-the-light-bulb">Part D: Measuring the I-V Characteristics of the Light Bulb</h3>
+<p>An ideal resistor obeys Ohm's law: <span>\(I=V/R\)</span>, i.e. the current through the
+element is proportional to the voltage across it. But for most real materials,
+the resistance changes as the temperature changes, and clearly, the temperature
+of the light bulb's filament increases as more current flows through it. Let's
+find out how the current and voltage of our light bulb are related.</p>
+<p>For this measurement, we will need to vary the voltage applied to the bulb, so
+we will need a variable voltage source. This is provided by the DC Power Supply
+on the VirtualBench. The DC power supply actually contains two variable voltage
+sources, but we will be using only one of them, the <span>\(0-6V\)</span> supply.</p>
+<ol>
+<li>
+<p>Make sure the DC power dongle is attached to your VirtualBench (VB).</p>
+<p><center>
+<img alt="" src="../figs/dongle_label.jpg" />
+</center></p>
+</li>
+<li>
+<p>Set the DMM to DC Volts. Connect the black (-) probe to the black <span>\(0-6V\)</span>
+   output terminal and the red (+) probe to the red terminal.</p>
+</li>
+<li>
+<p>Press the power button on the power supply interface below the oscilloscope
+   screen. Gradually increase the output voltage by raising the voltage in the
+   <span>\(+6V\)</span> setting. Both the power supply and the DMM should show increasing
+   voltage values. For several different values, note both the power supply <span>\(+6V\)</span>
+   setting and the DMM reading. <strong>How do the two compare?</strong> Return the voltage
+   output to zero.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the rest of this part, you will need to use VirtualBench as your
+second DMM. To use the DMM feature of VirtualBench, plug in the leads
+to the digital multimeter feature of VirtualBench. Note that
+VirtualBench contains two pairs of sockets for the leads: the left
+socket pair can be used for measuring voltage and resistance, while the
+right socket pair can be used for measuring current.</p>
+<p><center>
+<img alt="" src="../figs/img199.png" />
+</center></p>
+</div>
+</li>
+<li>
+<p>Wire the circuit below. You will need <a href="../../misc_images/#banana-plug-patch-cords">banana plug patch
+   cords</a> for this.</p>
+<p><center>
+<img alt="" src="../figs/img154.png" />
+</center></p>
+</li>
+<li>
+<p>Measure the current for voltages between <span>\(0V\)</span> and <span>\(1V\)</span>, in steps of about <span>\(0.2
+   V\)</span>. and between <span>\(1V\)</span> and <span>\(5V\)</span> in steps of about <span>\(0.5 V\)</span>. It is not necessary to
+   have <span>\(V\)</span> exactly equal to <span>\(1.000, 1.500,\)</span> etc. Just get it close and write down
+   the numbers accurately.</p>
+</li>
+<li>
+<p><strong>Plot <span>\(I\)</span> as a function of <span>\(V\)</span>. <a href=""></a><a href="../plotting-help/">How?</a></strong></p>
+</li>
+<li>
+<p><strong>To what point on this curve does the value of resistance you measured with
+   the ohmmeter correspond?</strong></p>
+</li>
+<li>
+<p>Now generate a <span>\(I\)</span> vs. <span>\(V\)</span> curve for a <span>\(1000\)</span>-ohm resistor
+   (brown-black-red). You can use the NC and L binding posts to hold the
+   resistor for this measurement. <strong>Is our assumption that <span>\(I=V/R\)</span> for all <span>\(V\)</span>
+   a valid one?</strong></p>
+</li>
+<li>
+<p>When finished, turn off the DMM.</p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../plotting-help/" class="btn btn-neutral float-right" title="Plotting Data in Matlab">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../background/" class="btn btn-neutral" title="Background"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../background/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../plotting-help/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

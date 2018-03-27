@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Voltage Amplifiers - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Voltage Amplifiers";
+    var mkdocs_page_input_path = "lab5/experiment_5-2.md";
+    var mkdocs_page_url = "/lab5/experiment_5-2/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Voltage Amplifiers</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#experiment-52">Experiment 5.2</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#voltage-amplifiers">Voltage Amplifiers</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 5 &raquo;</li>
+        
+      
+    
+    <li>Voltage Amplifiers</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="experiment-52">Experiment 5.2</h1>
+<h2 id="voltage-amplifiers">Voltage Amplifiers</h2>
+<h3 id="components">Components</h3>
+<ul>
+<li>741 Op Amp</li>
+<li>Resistors: 1-100 <span>\(\Omega\)</span>, 2-10 <span>\(k\Omega\)</span>, 1-100 <span>\(k\Omega\)</span></li>
+</ul>
+<p>As we saw in the previous experiment, the op-amp isn't very useful in an
+"open-loop" configuration (i.e. without feedback). The most common
+configuration for op-amp circuits is the <em>inverting amplifier</em> where the output
+is an amplified and inverted version of the input (i.e.  <span>\(A\)</span> is negative). From
+this starting point we can create a number of different input-output
+relationships, including sum, difference, and non-inverted gain.</p>
+<h3 id="part-a-the-basic-inverting-amplifier">Part A: The Basic Inverting Amplifier</h3>
+<ol>
+<li>
+<p>Wire the following circuit using 10 k<span>\(\Omega\)</span> resistors for both <span>\(R_1\)</span> and
+   <span>\(R_F\)</span>.</p>
+<p><center>
+<img alt="" src="../figs/img234.png" />
+</center></p>
+</li>
+<li>
+<p>Set the function generator to produce a 1 <span>\(V_{pp}\)</span>, 100 Hz sine wave.
+   <strong>Measure the voltage gain</strong>, <span>\(A_v = \frac{V_{out}}{V_{in}}\)</span> using the
+   oscilloscope. Note that the output is inverted with respect to the input.</p>
+</li>
+<li>
+<p>Replace <span>\(R_F\)</span> with a 100 k<span>\(\Omega\)</span> resistor.  <strong>Measure the gain.</strong></p>
+</li>
+<li>
+<p>Increase the input amplitude until output clipping occurs. <strong>What is the
+   clipping level? Is it the same as in Exp. 5.1?</strong></p>
+</li>
+<li>
+<p>Reduce the input amplitude till the output is 20 <span>\(V_{pp}\)</span>. Then increase the
+   frequency until the output amplitude drops to 10 <span>\(V_{pp}\)</span>. You should see a
+   triangular output waveform. This is because there is a limit to the maximum
+   rate at which the output voltage can change, called the <em>slew rate.</em></p>
+</li>
+<li>
+<p>Set the input to triangle and square wave and <strong>comment on how the output
+   changes.</strong></p>
+</li>
+<li>
+<p>Reset the function generator for a 100 Hz sine wave and reduce the amplitude
+   to produce a 1 <span>\(V_{pp}\)</span> output from the op amp.</p>
+</li>
+<li>
+<p>Again increase the frequency until the output is 0.7 <span>\(V_{pp}\)</span>. Observe that
+   the output is still sinusoidal. <strong>Note the frequency.</strong> This is called the
+   cutoff frequency or <em>bandwidth</em> of the amplifier.</p>
+</li>
+</ol>
+<h3 id="part-b-summing-amplifier">Part B: Summing Amplifier</h3>
+<p>There are a number of applications where it is useful to produce the sum, or
+more generally the weighted sum, of two or more signals. One example is the
+mixer system in a recording or broadcast studio where various sources
+(microphones, audio files, etc.) are combined to produce the final mix for the
+track or program.</p>
+<p>The inverting amplifier configuration we used makes this very easy to do, just
+add another resistor to the inverting (-) input of the op amp:</p>
+<p><center>
+<img alt="" src="../figs/img235.png" />
+</center></p>
+<p>A quick analysis shows that <span>\(v_{out} = -(\frac{R_F}{R_1}v_1 +
+\frac{R_F}{R_2}v_2)\)</span> , i.e.  the output is a weighted sum of the inputs. The
+key is to notice that the current flowing in <span>\(R_F\)</span> must be (by KCL) equal to
+the sum of the currents in <span>\(R_1\)</span> and <span>\(R_2\)</span> . For this reason, the node of an op
+amp circuit which is connected to the inverting input is sometimes referred to
+as the <em>summing junction</em>. This summation can be extended to any number of
+inputs.</p>
+<ol>
+<li>
+<p>Rather than just add two arbitrary signals together and watch the result on
+   the oscilloscope, let's do something a bit more entertaining: add two
+   signals together and listen to them. From our observations in Part A of
+   Experiment 2.2 and Part A of this Experiment, we would expect to have
+   trouble driving the loudspeaker with the output of the op-amp.  Fortunately,
+   we have a more suitable acoustic output transducer: the earpiece of the
+   telephone handset. The telephone earpiece is also very easy to connect to:
+   just plug it into J1-7 and wire to the appropriate pins on the interface
+   module connector strip. Notice that, unlike the microphone, neither of the
+   two earpiece terminals is automatically grounded. Be sure to ground one and
+   connect the other to <span>\(v_{out}\)</span>.</p>
+</li>
+<li>
+<p>For our two inputs, we will use the function generator for <span>\(v_1\)</span> and the
+   dynamic microphone for <span>\(v_2\)</span> . The earpiece produces a comfortably loud
+   output with a signal of about 1 V p-p. This is a level easy to produce with
+   the function generator, so we will choose a gain of 1 from <span>\(v_1\)</span> to <span>\(v_out\)</span>
+   . This means we must choose <span>\(R_1=R_F\)</span> , but says nothing about the actual
+   value. From past experience, 100 kΩ is a good choice. <strong>Choose the value of
+   <span>\(R_2\)</span> required to give a 1 V p-p output when speaking into the microphone in
+   a normal tone of voice.</strong> (Hint: Plug in your microphone into J1-4, and view
+   pin 4 on your oscilloscope to see the approximate peak-to-peak output when
+   you speak into the microphone. Then calculate the gain required to get 1-V
+   output. Size R2 based on this).</p>
+</li>
+<li>
+<p>Build the circuit using the component values you determined in the previous
+   step. Connect <span>\(v_1\)</span> , <span>\(v_2\)</span> , and <span>\(v_{out}\)</span> appropriately (function
+   generator, microphone, handset). Also connect <span>\(v_{out}\)</span> to the oscilloscope.
+   When the circuit is completed, speak into the microphone at a normal
+   speaking level and <strong>verify that the output <span>\(v_{mic}\)</span> is approximately
+   1 V p-p.</strong></p>
+</li>
+<li>
+<p>Set the function generator to produce a 440 Hz sine wave (musical note A).
+   Adjust the amplitude to produce a comfortable listening level in the handset
+   earpiece. While listening to the earpiece and watching the oscilloscope, hum
+   the note A. <strong>Take a screenshot and describe what happens on the scope when
+   you are in tune and when you are slightly out of tune with the function
+   generator.</strong> If the range of your voice does not encompass A440, try tuning
+   the function generator down an octave to 220 Hz.</p>
+</li>
+</ol>
+<h3 id="part-c-non-inverting-amplifier">Part C: Non-Inverting Amplifier</h3>
+<p>So far all of the op-amp circuits we have examined have been <em>inverting</em>, i.e.
+the polarity of the output is inverted with respect to the input. This doesn't
+have to be the case, as the following circuit shows:</p>
+<p><center>
+<img alt="" src="../figs/img236.png" />
+</center></p>
+<p>This is an example of the basic <em>non-inverting</em> op-amp configuration. A simple
+analysis shows that <span>\(v_{out}=(1+\frac{R_2}{R_1})v_{in}\)</span> (with no minus sign).
+This circuit has a couple of useful characteristics. Most obvious is that it
+doesn't invert. Another is that the input impedance is extremely high. One
+potential disadvantage is that the minimum value of gain is unity.</p>
+<ol>
+<li>
+<p>Using another 741 op amp, wire the non-inverting amplifier circuit.  Let
+   <span>\(R_1\)</span> be 1 <span>\(k\Omega\)</span>. Choose <span>\(R_2\)</span> to give a gain of 2.</p>
+</li>
+<li>
+<p>Connect a 1 <span>\(V_{pp}\)</span> 1 kHz sine wave to <span>\(v_{in}\)</span> . Observe <span>\(v_{in}\)</span> and
+   <span>\(v_{out}\)</span> on the oscilloscope.</p>
+</li>
+<li>
+<p><strong>Take a screenshot. What is the actual gain? Is it in non-inverting?</strong></p>
+</li>
+</ol>
+<h3 id="part-d-difference-amplifier">Part D: Difference Amplifier</h3>
+<p>What if we want the difference, rather than the sum of two signals? We could
+combine an inverting amplifier with a summing amplifier to negate one of the
+signals before forming a sum, but this would require two op-amps. A simpler
+circuit results from combining an inverting and a non-inverting configuration
+on the same op-amp, like this:</p>
+<p><center>
+<img alt="" src="../figs/img237.png" />
+</center></p>
+<p>For arbitrary values of the resistors, we get </p>
+<span>\[
+v_{out}=-\frac{R_2}{R_1}v_1+\frac{R_4}{R_3+R_4}\frac{R_1+R_2}{R_1}v_2
+\]</span><p>which doesn't seem very useful. However, if we let <span>\(R_3=R_1\)</span> and <span>\(R_4=R_2\)</span>,
+then we have </p>
+<span>\[
+v_{out}=\frac{R_2}{R_1}(v_2-v_1)
+\]</span><p>i.e. a <em>difference amplifier</em>.</p>
+<ol>
+<li>
+<p>Wire the above circuit, using 10 <span>\(k\Omega\)</span> for all four resistors.</p>
+</li>
+<li>
+<p>Using the function generator for <span>\(v_1\)</span> and the 0-6 V power supply for <span>\(v_2\)</span>,
+   <strong>take a screenshot and verify that <span>\(v_{out}\)</span> is indeed the difference of
+   <span>\(v_1\)</span> and <span>\(v_2\)</span> with the expected sign.</strong></p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../lab6/" class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../experiment_5-1/" class="btn btn-neutral" title="The 741 Op-Amp"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../experiment_5-1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../lab6/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Lab Report - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Lab Report";
+    var mkdocs_page_input_path = "references/lab-report.md";
+    var mkdocs_page_url = "/references/lab-report/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../color_code/">Resistor Color Codes</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Lab Report</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#your-lab-report">Your Lab Report</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#the-report-itself">The Report Itself</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>References &raquo;</li>
+        
+      
+    
+    <li>Lab Report</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="your-lab-report">Your Lab Report</h1>
+<p>A lab report serves several functions. In industry it serves as a legal
+document to establish priority of invention in patent disputes. While we
+don't expect many patentable discoveries to come out of 243 Lab, you
+should develop good lab report habits in case you should go to work for
+a company that does have such expectations.</p>
+<p>In scientific research, it provides a record that allows you to
+duplicate your work if you succeed at your endeavor (or if you achieve
+some unexpected but significant result). It's also useful in identifying
+what might have gone wrong if you don't achieve your desired result.</p>
+<p>In an educational environment, we have some additional goals. The lab
+report provides a mechanism for evaluating your performance.</p>
+<h3 id="the-report-itself">The Report Itself</h3>
+<p>Each lab team will turn in a single report on Canvas on the day of their next
+lab session at noon. Lab reports may be written in Word or LaTeX. Both
+templates will be provided.</p>
+<p>Here are links to lab report templates and useful guidelines:</p>
+<ul>
+<li><a href="../../resources/ELEC243_LabReportTemplate.docx">Word Template</a></li>
+<li><a href="../../resources/getting-started-with-latex.pdf">Getting Started with LaTeX</a></li>
+<li><a href="../../resources/ELEC243_LabReportTeXTemplate.tex">LaTeX Template</a></li>
+<li><a href="../../resources/ELEC240_Slides.pdf">"Writing Lab Reports" Presentation</a></li>
+<li><a href="../../resources/ELEC240_Handout.pdf">Report Guidelines Handout</a></li>
+<li><a href="../../resources/ELEC243_GradingRubric.pdf">Grading Rubric</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../manuals-and-data-sheets/" class="btn btn-neutral float-right" title="Instruction Manuals and Data Sheets">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../color_code/" class="btn btn-neutral" title="Resistor Color Codes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../color_code/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../manuals-and-data-sheets/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

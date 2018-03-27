@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Improved Resistance Measurement - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Improved Resistance Measurement";
+    var mkdocs_page_input_path = "lab4/experiment_4-2.md";
+    var mkdocs_page_url = "/lab4/experiment_4-2/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Improved Resistance Measurement</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#experiment-42">Experiment 4.2</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#improved-resistance-measurement">Improved Resistance Measurement</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 4 &raquo;</li>
+        
+      
+    
+    <li>Improved Resistance Measurement</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="experiment-42">Experiment 4.2</h1>
+<h2 id="improved-resistance-measurement">Improved Resistance Measurement</h2>
+<p>Let's apply our new Labview skills to the task of improving the
+resistance/temperature measurement system we built last week.</p>
+<h3 id="part-a-measure-vs">Part A: Measure Vs</h3>
+<p>One shortcoming of last week's system is that we have to be careful to set the
+power supply voltage to the correct value. Since <span>\(V_S\)</span> appears in the formula
+for temperature, if this voltage is incorrect, the temperature reading will be
+incorrect. A much better design would be to have Labview measure the actual
+value of <span>\(V_S\)</span> and use that value in the formula.</p>
+<ol>
+<li>
+<p>Restore the connections you had in Experiment 3.2 last week with the 0-6 V
+   output of the power supply (set to 5.00 V) connected to J1-3.  Check that
+   the circuit on your breadboard is still wired correctly. Load and run the VI
+   you saved last week and verify that it still produces the correct reading
+   for temperature. Vary the power supply voltage and observe that the
+   temperature reading changes in response.</p>
+</li>
+<li>
+<p>Stop the VI. On your breadboard, add a wire to connect <span>\(V_S\)</span> to <code>ach4</code>, so
+   that your circuit looks like this:</p>
+<p><center>
+<img alt="" src="../figs/img229.png" />
+</center></p>
+</li>
+<li>
+<p>We are now asking the A/D converter to read two different voltages
+   simultaneously. This is not a problem for the A/D converter, but it does
+   require <em>us</em> to figure out how Labview represents multiple simultaneous
+   samples.</p>
+</li>
+<li>
+<p>The obvious way to handle this would be to simply add another A/D block and
+   set it to A/D Channel 4. If you try this, you will get a cryptic error
+   message to the effect that the device is already in use.  This is because
+   all of the channels are on the same card, and the first channel which is
+   opened has exclusive use of the device. Labview handles this by combing
+   multiple samples into a <em>vector</em>, with one entry for each channel.</p>
+</li>
+<li>
+<p>Double click the A/D block or select <code>Properties</code> from the menu. This will
+   bring up the <code>DAQ Assistant</code> dialog. Click on Add Channels button near the
+   top of the panel</p>
+<p><center>
+<img alt="" src="../figs/grab48a.png" />
+</center></p>
+</li>
+<li>
+<p>Select <code>Voltage</code> from the popup menu, then select <code>ai4</code> from the list of
+   Supported Physical Channels. A new entry for ai4 should appear in the
+   channels list. Because channel 5 appears first on the list, it will be the
+   first element of the vector of samples and channel 4 will be the second. It
+   won't cause problems as long as we remember the order. Click <code>OK</code>.</p>
+</li>
+<li>
+<p>The block diagram looks the same as before, but now the wire is carrying two
+   separate values. Perhaps surprisingly, this fact does not change the
+   original operation of the VI. Subsequent blocks, expecting a single value,
+   simply take the first element of the vector. Since we left the original
+   signal (<span>\(V_T\)</span>) as the first element, everything to the right of the A/D
+   converter block works as it did before. Start the VI and verify that this is
+   the case.</p>
+</li>
+<li>
+<p>Click on the wire segment coming out of the <code>data</code> terminal of the <code>DAQ
+   Assistant</code> block and press <code>Delete</code> to remove it. The remainder of the wire
+   will become broken, since there is now no input. From the <code>Functions</code>
+   palette, select Express <span>\(\rightarrow\)</span> Sig Manip <span>\(\rightarrow\)</span> Split Signals.  Place the
+   resulting icon between the A/D converter output and the leftmost portion of
+   the broken wire, and click to release.</p>
+</li>
+<li>
+<p>The split signals block is expandable to accomodate the number of signals in
+   a bundle. Place the cursor over the middle of the bottom edge and move it
+   around until it turns into a resize arrow. Drag the bottom edge down by one
+   increment. The resulting icon will look like a wishbone in a box.</p>
+<p><center>
+<img alt="" src="../figs/grab54.png" />
+</center></p>
+</li>
+<li>
+<p>Wire the left side of the split signals block to the A/D output. The upper
+    output is <span>\(V_T\)</span> (ach5).  Connect it to the broken <span>\(V_T\)</span> wire.</p>
+</li>
+<li>
+<p>The lower output is <span>\(V_S\)</span> , which will replace the constant value of 5
+    currently connected to the upper input of the subtract block. Delete this
+    numeric constant block and wire the lower output of the split signal block
+    to its previous destination.</p>
+</li>
+<li>
+<p>Start the VI and verify that the displayed temperature value is still
+    correct. Vary the value of <span>\(V_S\)</span> and verify that it remains correct.</p>
+</li>
+</ol>
+<h3 id="part-b-generate-vs-in-labview">Part B: Generate <span>\(V\)</span>s in Labview</h3>
+<p>Our temperature measurement system is now more accurate, but it's still very
+bulky since it requires the power supply in order to function. In the previous
+Experiment we were able to use Labview to generate constant voltages. If we
+were to generate such a voltage and connect it in place of the power supply, we
+would have a self-contained measurement system.</p>
+<ol>
+<li>Stop the VI. On your breadboard, remove the wire connecting J1-3 to <span>\(V_S\)</span>
+   and replace it with a wire connecting <code>dac0</code> to <span>\(V_S\)</span>.</li>
+</ol>
+<p><center>
+<img alt="" src="../figs/img230.png" />
+</center></p>
+<ol>
+<li>
+<p>On the block diagram, move the bottom edge of the while loop down to create
+   room for additional components. In the resulting space add a <code>DAQ Assist</code>
+   output block, selecting <code>Analog Output</code>, <code>Voltage</code>, <code>ao0</code>, and <code>1 Sample (On
+   Demand)</code> as before. To the left of this block, place a numeric constant, set
+   its value to 5, and wire it to the D/A block input.</p>
+</li>
+<li>
+<p>Start the VI and verify that all is well.</p>
+</li>
+</ol>
+<h3 id="part-c-smoothing">Part C: Smoothing</h3>
+<p>You have probably noticed that the displayed temperature is not very steady.
+This is due to undesired signals, or <em>noise</em>, finding their way into our
+system.</p>
+<p>Much of what we will do in subsequent Labs, will be devoted to minimizing the
+effect of noise. For now we will content ourselves with the most common
+response to unwanted variation in data: taking the average.</p>
+<p>Before we start to improve the situation, let's try to get a
+quantitative idea of how bad it is. At the moment what we know is that
+the displayed value jumps around a lot. Let's get a picture of those
+jumps.</p>
+<ol>
+<li>
+<p>Stop the VI and go to the front panel. Right click to bring up the
+   <code>Controls</code> palette, go to Graph <span>\(\rightarrow\)</span> Waveform Chart. Place the
+   resulting chart in a convenient location on the front panel.</p>
+</li>
+<li>
+<p>Use <code>Find Terminal</code> or your own navigational skills to find the icon for the
+   <code>Waveform Chart</code> on the block diagram. Connect its input to the <code>T</code> output
+   of the formula node.</p>
+</li>
+<li>
+<p>Return to the front panel and start the VI. The chart will provide a graphic
+   record of the variations in the temperature reading. Accumulate a few
+   seconds of readings, then stop the VI and take a screenshot of the front
+   panel.</p>
+</li>
+<li>
+<p>Right click to bring up the <code>Functions</code> palette, select Sound and Vibration
+   <span>\(\rightarrow\)</span> Data Evaluation <span>\(\rightarrow\)</span> Probability and Statistics
+   <span>\(\rightarrow\)</span> Statistics. Place the resulting block between the <code>DAQ
+   Assistant</code> block and the split signals block. When the <code>Configure
+   Statistics</code> dialog appears, select <code>Arithmetic mean</code>, then click <code>OK</code>.
+   Connect the output of the <code>DAQ Assistant</code> block to the <code>Signals</code> input of
+   the <code>Statistics</code> block. Connect the <code>Arithmetic Mean</code> output to the input of
+   the split signals block.</p>
+</li>
+<li>
+<p>If we were to run the VI at this point, we would get the same behavior as
+   before. This shouldn't be surprising, since the average of a single value
+   (the <code>1 Sample</code> from the A/D converter) is just the original value. What we
+   need to do is take the average of a large number of input values to produce
+   a single output.</p>
+</li>
+<li>
+<p>Double click on the <code>DAQ Assistant</code> block to bring up the configuration
+   dialog. Under <code>Acquisition Mode</code>, change <code>1 Sample (On Demand)</code> to <code>N
+   Samples</code>. Set <code>Samples To Read</code> to 1000. Since the <code>Rate</code> is 1000 samples
+   per second, this will give us 1000 values to average. Click <code>OK</code>.</p>
+</li>
+<li>
+<p>Since the process of gathering the 1000 samples now consumes one second, the
+   <code>Time Delay</code> block is no longer needed. Either delete it, or edit it and set
+   the delay to zero.</p>
+</li>
+<li>
+<p>Return to the front panel and start the VI. The signal on the <code>Waveform
+   Chart</code> should be much smoother. In fact we might be willing to believe that
+   the variations that remain correspond to actual changes in temperature.
+   Screenshot to compare with the unsmoothed plot.</p>
+</li>
+<li>
+<p>Stop the VI and save it in a persistent location.</p>
+</li>
+</ol>
+<h3 id="part-d-measure-illumination">Part D: Measure Illumination</h3>
+<p>Having spent considerable effort developing a system for accurately measuring
+temperature, we would like to leverage this technology into new market areas.
+Since this technology is based on the measurement of resistance, we can use it
+to measure any physical phenomenon for which we have a resistance based
+transducer. A quick search of our parts kit turns up an ideal candidate for
+this new venture: the CdS photocell.</p>
+<ol>
+<li>
+<p>In the circuit from the previous Part, replace the thermistor with your CdS
+   photocell.</p>
+</li>
+<li>
+<p>Make a copy of the VI you used in the previous part and give it an
+   appropriate name. Load this VI and go to the block diagram.</p>
+</li>
+<li>
+<p>Based on the information in the CdS photocell
+   <a href="https://media.digikey.com/pdf/Data%20Sheets/Photonic%20Detetectors%20Inc%20PDFs/PDV-P9001.pdf">datasheet</a>
+   , <strong>derive a formula which gives the illumination level (in Lux) in terms of
+   the resistance.</strong></p>
+</li>
+<li>
+<p>Replace the formula in the formula node of the block diagram with the one
+   you derived in the previous step. On the front panel, change the label of
+   the temperature display from <code>T</code> to <code>Illumination</code>.</p>
+</li>
+<li>
+<p>Since light can vary much more rapidly than temperature, the <code>Waveform
+   Chart</code> display would be more useful with a faster update rate.  Edit the A/D
+   converter block and change the <code>Samples To Read</code> from 1000 to 100.</p>
+</li>
+<li>
+<p>Start the VI and verify that it works correctly.</p>
+</li>
+<li>
+<p><strong>Determine the illumination level under various conditions: under-shelf
+   light on or off, smart phone light on or off, photocell covered, or even
+   movement around the photocell, etc.</strong> If necessary, clear the plot by
+   right-clicking over the display window and selecting "Clear Chart".</p>
+</li>
+<li>
+<p>Set the VirtualBench function generator to produce a 1 Hz, 8 <span>\(V_{ pp }\)</span>
+   square wave. Use BNC clip leads to connect a red LED to the output.(polarity
+   is not important). The LED should be flashing at a rate of once per second.</p>
+</li>
+<li>
+<p>Hold the LED over the photocell, pointing downward. Observe the resulting
+   waveform on the <code>Waveform Chart</code> display. Increase the distance between the
+   LED and the photocell and <strong>note the maximum distance</strong> at which the signal
+   from the LED is still discernable in the displayed waveform.</p>
+</li>
+</ol>
+<p>This last step provides an example of an optical communication system where the
+signal delivered to the LED is transfered over an optical channel to emerge
+some distance away as the output of the photocell.  This is essentially the
+same arrangement we used in Part C of Experiment 2.3, except we're using the
+photocell instead of the photodiode.</p>
+<p>The response of the photodiode is much faster than that of the photocell, but
+we found that its output voltage was a distorted version of the optical input.
+The reason for this: viewed as a <em>current</em> source the photodiode's output is
+linear in the input irradiance, while viewed as a <em>voltage</em> source its output
+is logarithmic. We will deal with this next week by building a circuit which
+converts this output current to a voltage.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../lab5/" class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../experiment_4-1/" class="btn btn-neutral" title="Labview as a Source of Signals"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../experiment_4-1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../lab5/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

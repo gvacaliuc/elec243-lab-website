@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Transducer Amplifiers - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Transducer Amplifiers";
+    var mkdocs_page_input_path = "lab6/experiment_6-1.md";
+    var mkdocs_page_url = "/lab6/experiment_6-1/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../introduction/">Introduction</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Transducer Amplifiers</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#experiment-61">Experiment 6.1</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#transducer-amplifiers">Transducer Amplifiers</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 6 &raquo;</li>
+        
+      
+    
+    <li>Transducer Amplifiers</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="experiment-61">Experiment 6.1</h1>
+<h2 id="transducer-amplifiers">Transducer Amplifiers</h2>
+<h3 id="equipment">Equipment</h3>
+<ul>
+<li>Test board</li>
+<li>Red LED</li>
+<li>Photodiode</li>
+<li>Lego pieces (2) 1x2 beams, (2) 2x4 pieces</li>
+<li>3 LM741 opamps</li>
+<li>100<span>\(\Omega\)</span>, 10<span>\(\Omega\)</span>, 1.5<span>\(k\Omega\)</span>, 2 100<span>\(k\Omega\)</span>, 2.2<span>\(k\Omega\)</span></li>
+</ul>
+<p>Transducers are devices that convert a physical quantity into an electric
+signal, or vice versa. Photodiodes and LEDs belong to the class of transducers.
+We tried connecting these devices directly to our measuring instruments in
+Experiments 1.2 and 2.4 with less than ideal results. The reason for this is
+their performance is based on current rather than voltage or resistance. We
+don't have current sources available to drive the LED and our current measuring
+equipment is not sensitive enough to produce useful readings from the
+photodiode.</p>
+<p>In this Experiment, we will use op-amps to produce a pair of hybrid amplifiers.
+One is an amplifier which accepts a current as an input and produces a voltage
+as an output. Quantitatively we can express this as <span>\(v_{out}=R_mi_{in}\)</span> where
+<span>\(R_m\)</span> is the gain of the amplifier. <span>\(R_m\)</span> is called the <em>mutual resistance</em> or
+more commonly <em>transresistance</em> (short for "transfer resistance"). Similarly a
+<em>transconductance</em> amplifier will convert an input voltage <span>\(v_{in}\)</span> to an
+output current <span>\(i_{out}\)</span>.</p>
+<p>There is a variety of applications for either a transresistance amplified
+photodiode or a transconductance amplified LED. A further set of applications
+is opened up by combining the two into an <em>emitter-detector pair</em>. We saw one
+such application in Lab 2 where we built a miniature optical communication
+system using an LED as a transmitter and a photodiode as the receiver. In a
+communication system we want to maximize the achievable distance between
+transmitter and receiver and our main concern about the space between them is
+that it cause as little attenuation to the transmitted signal as possible.</p>
+<p>Today we will provide additional circuitry to improve the linearity and
+sensitivity of the resulting emitter-detector pair.</p>
+<h3 id="part-a-an-emitter-detector-pair">Part A: An Emitter-Detector Pair</h3>
+<p>For a communication system, portability of the transmitter and receiver is
+important. However, many of the measurement systems based on optical
+emitter-detector pairs require a precisely fixed distance between the
+transmitter and receiver. Our first step will be to build the mechanical
+structure to house our emitter and detector.</p>
+<p>We will use Legos to create our mechanical structure (see figure below for final structure). Use the 1x2 beam to mount the photodiodes and LEDs. We will be using
+a high-brightness red LED in this experiment.</p>
+<ol>
+<li>
+<p>Press the LED into the hole in a 1x2 beam, and the photodiode into another 1x2 beam.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the photodiode is a bit too small to fit into the Lego hole, cut a
+strip of paper and wrap around the photodiode before inserting into the
+block.</p>
+</div>
+</li>
+<li>
+<p>For convenience we will mount the entire assembly on the breadboard, so use
+   a 2x4 plate as the base and use 1x2 plates for
+   vertical height.  </p>
+</li>
+<li>
+<p>Bend the leads of the photodiode and LED downward so they will fit into the breadboard. Position the assembly in the center of the breadboard with the
+   LED on the left and plug in the leads.
+    <center>
+    <img alt="" src="../figs/ed_pair.jpg" />
+    </center></p>
+</li>
+</ol>
+<p>We now have an optical path, of length approximately equal to three times the
+basic Lego pitch, with an LED at one end and a photodiode at the other. This
+will be our basic apparatus for transmission measurements.</p>
+<h3 id="part-b-photodiode-amplifier">Part B: Photodiode Amplifier</h3>
+<p>The inverting op-amp circuit works by taking the current that flows into the
+"virtual ground" at the inverting input and forcing it to flow in the feedback
+resistor. Since the voltage across <span>\(R_F\)</span> is equal to <span>\(R_F I_F\)</span> , the output
+voltage (on the other terminal of <span>\(R_F\)</span> ) is proportional to the current
+flowing into the virtual ground. What if instead of this current originating
+from the voltage across <span>\(R_1\)</span> , it instead came directly from a current source?
+Well, the output voltage would still be proportional to it: <span>\(v_{out} = -R_F I_F
+= -R_F I_{in}\)</span> I.e. we have an amplifier which accepts a current as an input
+and produces a voltage as an output.  This is called a <em>transresistance
+amplifier</em>. (Since a resistance converts its current to a voltage (<span>\(v=Ri\)</span> ), a
+transresistance converts a current in one part of the circuit to a voltage in
+another.)</p>
+<p><center>
+<img alt="" src="../figs/img243.png" />
+</center></p>
+<ol>
+<li>
+<p>Wire up the photodiode amplifier shown above near the photodiode.  Leave
+   enough space to the right of this circuit for an additional op-amp.</p>
+</li>
+<li>
+<p>Turn on the under-shelf florescent lamp and monitor <span>\(v_{out}\)</span> with the
+   oscilloscope. You should see a DC value with a significant amount of 120 Hz
+   ripple. <strong>Take a screenshot.</strong></p>
+</li>
+</ol>
+<h3 id="part-c-led-driver">Part C: LED Driver</h3>
+<p>If we drive the LED directly from the function generator (as we did in Lab 2)
+the resulting optical signal is badly distorted since the LED only conducts on
+the positive half-cycle of the waveform. We can fix this problem by using the
+<code>OFFSET</code> control to add a DC <em>bias</em> to the signal. If the bias is greater than
+the amplitude of the AC component, the signal is always positive and the LED
+will always conduct. However, there is still some distortion due to the
+exponential i-v relationship of the diode. Since the brightness of the LED is
+proportional to current and our signal sources put out voltages, we need a
+voltage-in, current-out or <em>transconductance</em> amplifier.</p>
+<p>Some background before constructing: the simplest way to get a transconductance
+amplifier out of our basic inverting amplifier configuration is to replace the
+feedback resistor with the element whose current we wish to control, in this
+case the LED:</p>
+<p><center>
+<img alt="" src="../figs/img244.png" />
+</center></p>
+<p>To get the offset we need to avoid clipping, we can add a second input and
+connect it to one of the power supplies. In this case, to forward bias the
+diode, we must connect it to the negative (-15 V) supply.</p>
+<p><center>
+<img alt="" src="../figs/img245.png" />
+</center></p>
+<p>Thirdly, we would like to be able to monitor the current in the LED. To do this
+we simply add a current sensing resistor in series.</p>
+<p>Putting this all together we get the following:</p>
+<p><center>
+<img alt="" src="../figs/img246.png" />
+</center></p>
+<ol>
+<li>
+<p>Wire the circuit as shown above to the left of the LED in the
+   emitter-detector pair.</p>
+</li>
+<li>
+<p>Set the function generator to produce a 1 V p-p, 1 Hz square wave and
+   connect it to <span>\(v_{drive}\)</span> . The LED should get brighter and dimmer, but
+   never be completely extinguished.</p>
+</li>
+<li>
+<p>While observing both <span>\(v_1\)</span> and the photodiode amplifier output on the
+   oscilloscope, <strong>determine the maximum value <span>\(v_{drive}\)</span> can have before
+   distortion occurs.</strong></p>
+</li>
+<li>
+<p>Analyze the above circuit and <strong>determine the relationship between
+   <span>\(v_{drive}\)</span> and <span>\(i_{LED}\)</span>. What is the quiescent current in the LED (i.e.
+   with no input signal)?</strong></p>
+</li>
+</ol>
+<h3 id="part-d-more-gain-for-the-photodiode">Part D: More Gain for the Photodiode</h3>
+<p>With nothing but air between the LED and the photodiode, our photodiode
+amplifier gives a satisfactory output. However if we want to be able to measure
+objects with high optical density, we will need more sensitivity. Since the
+output voltage is determined by the product of the photodiode current and
+<span>\(R_F\)</span>, we can get more output for the same input simply by increasing <span>\(R_F\)</span>.</p>
+<p>We could increase the gain by a factor of 100, by replacing <span>\(R_F\)</span> with 10 MΩ;
+however, there are a couple of reasons not to do it that way. One is that
+putting too much gain in a single stage can lead to problems, including reduced
+bandwidth. Another is that this would amplify the DC component of the signal
+(due to ambient light) by the same amount as our (much smaller) LED signal.
+This could cause the amplifier to saturate (clip), causing complete loss of the
+desired signal. Adding a second stage, with a DC blocking capacitor between the
+stages, eliminates both of these objections.</p>
+<p><center>
+<img alt="" src="../figs/img247.png" />
+</center></p>
+<ol>
+<li>
+<p>Add additional components to your existing photodiode amplifier to produce
+   the circuit above. The additional circuitry should be placed directly to the
+   right of the original photodiode amplifier that you built in Part B.</p>
+</li>
+<li>
+<p>Observe <span>\(v_{photo2}\)</span> with the oscilloscope. You should see the 120 Hz ripple
+   due to the ambient flourescent lighting. With the scope set to DC, there
+   should be no significant offset voltage.</p>
+</li>
+<li>
+<p><strong>Ignoring the effect of the capacitor, what is the total transresistance
+   gain ( <span>\(v_{photo2}/i_d\)</span> ) for this circuit?</strong> Don't disassemble the
+   photodiode amplifier or LED driver circuits. We will be using them in future
+   labs.</p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../experiment_6-2/" class="btn btn-neutral float-right" title="Frequency Response">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../introduction/" class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../introduction/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../experiment_6-2/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

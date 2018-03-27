@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Wiring - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Wiring";
+    var mkdocs_page_input_path = "references/wiring.md";
+    var mkdocs_page_url = "/references/wiring/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../interface/">The Interface Modules</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Wiring</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#wiring">Wiring</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#organizing-your-breadboard">Organizing Your Breadboard</a></li>
+        
+            <li><a class="toctree-l4" href="#real-world-circuit-problems">Real World Circuit Problems</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>References &raquo;</li>
+        
+      
+    
+    <li>Wiring</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="wiring">Wiring</h1>
+<h3 id="organizing-your-breadboard">Organizing Your Breadboard</h3>
+<p>The first few Labs are something of a "warmup" in terms of utilizing the
+breadboard. We will use only one or two of the interface components at a time
+and will build circuits consisting of 2 or 3 components which are disassembled
+at the end of lab. As we get closer to the final project, we will be
+constructing more complicated circuits having more external connections. Since
+some of these will perform functions needed in subsequent Labs, we will want to
+leave them in place on the breadboard for future use. We will need a plan for
+organizing the layout and wiring on the breadboard and interface board.</p>
+<p>There are several aspects to this organization ranging from small details to
+the big picture.</p>
+<h4 id="color-coding">Color Coding</h4>
+<p>Your wire kit contains an assortment of different colored wires. You could just
+pick pieces of wire at random, or you could try to use the different colors to
+designate different signals. There aren't enough colors for each signal to have
+its own, but you can use different colors to denote different classes of
+signals.</p>
+<p>One set of signals you should color code are power and ground. In particular,
+you should have a different color for <span>\(+15V\)</span>, <span>\(-15V\)</span>, and ground. You should
+not use any of these colors for other signals. It would be nice to use
+"standard" colors for these, but unfortunately there are several competing
+standards. One color that nearly everyone agrees on is that red should be the
+positive power supply voltage. Most automotive and electronic wiring uses black
+to denote ground. Electronic wiring which uses black for ground often uses blue
+for the negative supply. However, our power supply and breadboard use green to
+denote ground (the convention used in house wiring) and use black to denote the
+negative supply.</p>
+<p>So we have two possible "standard" color codes for power: </p>
+<ol>
+<li>red = +, green = gnd, black = -</li>
+<li>red = +, black = gnd, blue = - </li>
+</ol>
+<p>You could use either of these, or make up your own.</p>
+<p>Another useful thing to color code would be the wires or "probes" from the
+interface board connector. That way you can tell which wire is <code>CH1</code> of the
+scope or which is the function generator output without having to trace from
+one end of the wire to the other.</p>
+<h4 id="power-bussing">Power Bussing</h4>
+<p>There are a few different ways to figure out the orientation of an Integrated
+Chip (IC) such as an an <a href="../../misc_images/#741-op-amp">op-amp</a>.  The first step
+is to figure out where pin 1 is. The remaining pins are in chronological order
+and increment in a counter-clockwise direction.</p>
+<p>If pin 1 is in the lower left corner, then the writing on the package reads
+left to right. Alternately, some ICs will have a dot above pin 1.  A third
+indication is a semi-circle indentation on the top end of the chip - pin 1 will
+be to the left of it.</p>
+<p>To simplify power wiring, we should run the positive bus above each socket
+strip and the negative bus below. Doing this and running ground on the
+remaining buses gives us the following layout for power:</p>
+<p><img alt="Missing image file." src="../figs/img6.gif" /></p>
+<h4 id="interface-board-connector-assignments">Interface Board Connector Assignments</h4>
+<p>Some of the connectors on the Interface Board are dedicated to a single
+function (e.g. the telephone handset or the sound card). Others (e.g.
+the BNC and phone jacks) are more flexible and may be connected to a
+variety of signal sources or destinations. It will be helpful to
+establish standard assignments for these connectors as well.</p>
+<p>In the instructions and photographs, we will be using the following
+assignment:</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>Socket Pin</strong></th>
+<th><strong>Signal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J1-1</td>
+<td>1</td>
+<td>Oscilloscope channel 1</td>
+</tr>
+<tr>
+<td>J1-2</td>
+<td>2</td>
+<td>Oscilloscope channel 2</td>
+</tr>
+<tr>
+<td>J1-3</td>
+<td>3</td>
+<td>Function generator output</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="overall-layout">Overall Layout</h4>
+<p>This final project will be a fairly complex circuit. Good engineering practice
+is to break down a complex system into a number of simple subsystems, each of
+which performs a single, well-defined function.</p>
+<p>In the unlikely event that your circuit does not work perfectly the first time
+you turn it on, it will make it easier for you (and your labbie) to debug it if
+each of these subcircuits is laid out (neatly, of course) on its own little
+patch of breadboard and is connected to the other subcircuits in such a way
+that it may be easilly disconnected from them for testing in isolation.</p>
+<p>One additional advantage of a tidy layout with short wires is that it is more
+rugged. Remember that you will have to transport your circuit from your lab
+bench to the testing station without parts falling off or loops of wire getting
+caught and mysteriously pulled loose.</p>
+<h3 id="real-world-circuit-problems">Real World Circuit Problems</h3>
+<p>On paper all our components are ideal and no components exist where we don't
+draw them. In an actual circuit, things are not quite so tidy: wires have non
+zero resistance and inductance, sources have output resistance, parasitic
+capacitances and mutual inductances exist between wires, and a host of other
+gremlins. In addition, although we are only applying input signals up to a few
+10s of kHz, the active devices (op amps and transistors) we use have gain at
+frequencies up to a few MHz (op amps) or 100s of MHz (transistors). This means
+that all of the "little" pieces of wire can become fairly effective antennas,
+radiating energy to (and receiving from) the rest of the world, and more
+significantly, to other parts of the circuit.</p>
+<p>What all this means is that a circuit which is wired correctly topologically
+may fail to function as expected. Although we can't eliminate all of these
+effects, we can do some things to minimize them.  Here are a few.</p>
+<h4 id="layout">Layout</h4>
+<p>Try to arrange your layout so that each function is grouped together in a
+single area of the board and so that stages that are connected together are
+close to each other. This will allow connections to be made with shorter wires.
+Also try to avoid having high level signals near low level stages.</p>
+<h4 id="twisted-pairs">Twisted Pairs</h4>
+<p>One way to reduce unwanted coupling between different signals in your circuit
+is to use <em>twisted pairs</em>, i.e. a pair of wires twisted together with one wire
+connected to ground and the other carrying the signal.</p>
+<p>To make a twisted pair, select two wires having an aesthetically pleasing
+combination of colors and twist them together.</p>
+<p><center>
+<img alt="" src="../figs/twisted.jpg" />
+</center></p>
+<p>You could use twisted pair wires for connections between the interface board
+and your circuit, as well as any other long runs of wire.</p>
+<p><center>
+<img alt="" src="../figs/twist_connect.jpg" />
+</center></p>
+<p>Use one wire for the signal and connect the other to ground, at both ends of
+the run.</p>
+<hr />
+<p><center>
+<img alt="" src="../figs/twist_connect3.jpg" /></p>
+<p><img alt="" src="../figs/twist_connect4.jpg" />
+</center></p>
+<hr />
+<p>Some signals (e.g. the photodiode input) don't have a ground. In this case, you
+can still use a twisted pair, but neither wire will be grounded.</p>
+<h4 id="routing">Routing</h4>
+<p>Twisted pair or not, try to keep wires carrying high level signals (large
+voltages or currents) (e.g. the LED or earphone) away from those carrying low
+level signals (e.g. the photodiode or dynamic microphone).  A corollary to this
+is to keep outputs away from inputs, especially in the same subcircuit. It's
+better for wires to cross at right angles than to run parallel to each other.</p>
+<h4 id="bypass-capacitors">Bypass Capacitors</h4>
+<p>Another path for unwanted coupling between stages is via the power supply. To
+reduce this, use some of your electrolytic capacitors as <em>bypass capacitors</em>,
+i.e. connect them between the power supply voltages and ground (be sure to
+observe correct polarity on the electrolytic capacitors - the shorter wire is
+usually negative polarity, and you will also see a neg sign above this wire).
+Ideally each op amp should be bypassed, but you may be able to get by with a
+single pair of capacitors for the entire circuit.</p>
+<h4 id="wiring-technique">Wiring Technique</h4>
+<p>The basic idea of wiring on a solderless breadboard is simple: just stick the
+ends of the component leads or wires into the holes. But like any seemingly
+simple process, there are a few subtleties that can make the difference between
+success and failure.</p>
+<p>First a note of caution. The material that the clips inside the breadboard are
+made of (so called "nickel silver") is a compromise between good conductivity,
+corrosion resistance, and springiness. In particular the elastic limit is
+considerably less than of a good steel spring and if spread too far, can be
+permanently distorted. To avoid deforming the connector clips:</p>
+<ul>
+<li>Use only the wire that is supplied to you (24 gauge, solid
+  telephone cable).</li>
+<li>Use only components with small diameter leads (1/4 watt resistors,
+  capacitors, ICs, etc.).</li>
+<li>Do not insert power resistor leads into the breadboard.  When using power</li>
+<li>transistors in the breadboard, use your pliers to
+  twist each lead 90 degrees so that they are gripped by the broad face rather
+  than the narrow edge.</li>
+<li>Never insert more than one wire in a hole.</li>
+</ul>
+<p>With the health of our breadboard assured, there are a few more things we can
+do to make sure that our connections are good ones.</p>
+<ul>
+<li>Strip about 7 mm of insulation from each end of a piece of wire.
+  Less than that raises the risk that insulation will be forced between the
+  fingers of the clip. More leaves bare wire exposed that can short to adjacent
+  components. Don't try to jam the wires far down into the breadboard because
+  it can scratch the bottom and damage the connection. One exception: strip
+  about 15 mm from the end of a wire that will be clamped in one of the binding
+  posts. Make sure copper is showing on both sides of the post when it is
+  clamped down.</li>
+<li>When inserting a wire or component, use your needle nosed pliers
+  rather than your fingers to hold it. Grip the wire or lead about 10 mm from
+  the end and press straight down.</li>
+<li>If the end of a wire becomes kinked, cut it off or use your pliers
+  to straighten it.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../color_code/" class="btn btn-neutral float-right" title="Resistor Color Codes">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../interface/" class="btn btn-neutral" title="The Interface Modules"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../interface/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../color_code/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

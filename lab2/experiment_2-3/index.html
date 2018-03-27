@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Optoelectronic Signal Sources and Sinks - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Optoelectronic Signal Sources and Sinks";
+    var mkdocs_page_input_path = "lab2/experiment_2-3.md";
+    var mkdocs_page_url = "/lab2/experiment_2-3/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Optoelectronic Signal Sources and Sinks</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#experiment-23">Experiment 2.3</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#optoelectrical-signal-sources-and-sinks">Optoelectrical Signal Sources and Sinks</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 2 &raquo;</li>
+        
+      
+    
+    <li>Optoelectronic Signal Sources and Sinks</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="experiment-23">Experiment 2.3</h1>
+<h2 id="optoelectrical-signal-sources-and-sinks">Optoelectrical Signal Sources and Sinks</h2>
+<p>Since we will be building an optical communication system, we will need
+some devices for converting electrical signals to and from light, as
+well as to and from sound. We will look at two: the photodiode, which
+converts light into an electrical signal, and the light emitting diode
+(LED) which converts electric current to light.</p>
+<h3 id="equipment">Equipment</h3>
+<ul>
+<li>Photodiode</li>
+<li>Red LED</li>
+</ul>
+<h3 id="part-a-the-photodiode">Part A: The Photodiode</h3>
+<ol>
+<li>
+<p>Connect the short lead (cathode) of the
+   <a href="../../misc_images/#photo-diode">photodiode</a> to ground and the long lead
+   (anode) to CH1 of the scope. You can use the BNC clip leads for this, but
+   the better way (which leaves your hands free) is to the plug it into the
+   breadboard and wire it to the appropriate interface pins (pin 1 to anode,
+   pin 14 to cathode).</p>
+<p><center>
+<img alt="" src="../figs/photo2.3.1a1.jpg" />
+</center></p>
+</li>
+<li>
+<p>View the DC signal on the scope. <strong>Note the voltage produced by photodiode.
+   How does it change when you cover the photodiode with your hand?</strong></p>
+</li>
+<li>
+<p>Set <code>CH1</code> to AC. What are the amplitude and frequency of the signal?</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Click on the ruler by the bottom left corner of the oscilloscope view
+for helpful measurement tools.</p>
+</div>
+</li>
+<li>
+<p>Explain the waveform you observed in the previous step. Switch back to DC.</p>
+</li>
+</ol>
+<h3 id="part-b-light-emitting-diode">Part B: Light Emitting Diode</h3>
+<ol>
+<li>
+<p>Using a 220-ohm (red-red-brown) resistor and your <a href="../../misc_images/#red-led">red
+   LED</a>, wire the following circuit:</p>
+<p><center>
+<img alt="" src="../figs/img159.png" />
+</center></p>
+</li>
+<li>
+<p>First wire the resistor and LED on the breadboard. There are two ways to
+   connect the power supply to the circuit (use one or the other not both):</p>
+<ul>
+<li>The first way: Plug your <a href="../../misc_images/#banana-adapter">BNC-banana
+adapter</a> into the <span>\(6V\)</span> power supply
+terminals.  Note: There is a bump on one side of the adapter to denote
+which prong is connected to ground. Be sure to plug this prong into the
+black terminal of the power supply.</li>
+</ul>
+<p><center>
+<img alt="" src="../figs/dc_bnc.jpg" />
+</center></p>
+<p>Then use the clip leads to connect to the LED and resistor.</p>
+<p><center>
+<img alt="" src="../figs/photo2.3.2c1.jpg" />
+</center></p>
+<ul>
+<li>The other way: Use the BNC adapter as above, but use a BNC patch cord
+to connect the power supply to <code>J1-3</code>. Use two pieces of wire to connect
+ground (pin 14) to the LED and <code>J1-3</code> (pin 3) to the resistor.</li>
+</ul>
+</li>
+<li>
+<p>Turn on the power supply. Slowly increase the voltage until you see the LED
+   just begin to glow. Measure the voltage across the LED. If the LED doesn't
+   light by the time the meter on the power supply reads 3 V, check your
+   circuit to make sure the diode is wired in the correct orientation. Unlike a
+   resistor or light bulb, the LED is <em>polarized.</em> The anode must be positive
+   for it to glow. Reverse the LED and verify that this is the case.</p>
+</li>
+<li>
+<p>Set the supply voltage to <span>\(3, 4\)</span>, and <span>\(5\)</span> volts. At each step note the
+   brightness of the LED and the voltage across it.</p>
+</li>
+<li>
+<p>Next power the LED with the <code>FGEN</code> instead of the power supply. Set it to
+   produce a <span>\(100\)</span> Hz square wave with minimum amplitude.</p>
+</li>
+<li>
+<p>Increase the amplitude until it begins to glow. Is the glow steady?</p>
+</li>
+<li>
+<p>Slowly reduce the frequency of the <code>FGEN</code>. <strong>At what frequency does noticeable
+   flicker begin?</strong></p>
+</li>
+<li>
+<p><strong>How does the number you measured in the previous step relate to the frame
+   rate of television and motion pictures?</strong></p>
+</li>
+</ol>
+<h3 id="part-c-optical-communication">Part C: Optical Communication</h3>
+<ol>
+<li>
+<p>Now connect the photodiode to <code>CH1</code> of the scope using a BNC-to clip leads
+   cord.</p>
+<p><center>
+<img alt="" src="../figs/photo2.3.3a.jpg" />
+</center></p>
+</li>
+<li>
+<p>With the LED still connected to the <code>FGEN</code> as in the previous part, set the
+   frequency to <span>\(100\)</span> Hz.</p>
+</li>
+<li>
+<p>Hold the photodiode (pointing down) above the LED (pointing up).  Adjust
+   their relative positions to maximize the signal displayed on the scope.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It may help to shield the components from ambient light with your hand.</p>
+</div>
+</li>
+<li>
+<p><strong>Describe the waveform. Is it what you would expect?</strong></p>
+</li>
+<li>
+<p>Set the <code>FGEN</code> to produce a triangle wave. Take a screenshot of the waveform.
+   <strong>Is it what you expected?</strong></p>
+</li>
+<li>
+<p>Reset the <code>FGEN</code> to produce a square wave. <strong>What is the maximum distance
+   over which you can transmit a recognizable signal?</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Switch to AC signal with higher gain.</p>
+</div>
+</li>
+<li>
+<p>We have several of the components needed for building an optical
+   communication system. <strong>What components are missing? What problems remain to
+   be solved?</strong></p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../lab3/" class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../experiment_2-2/" class="btn btn-neutral" title="Electroacoustic Transducers II"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../experiment_2-2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../lab3/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

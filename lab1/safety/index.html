@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Safety - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Safety";
+    var mkdocs_page_input_path = "lab1/safety.md";
+    var mkdocs_page_url = "/lab1/safety/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Safety</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#safety">Safety</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#electricity-can-kill-you">Electricity can kill you.</a></li>
+        
+            <li><a class="toctree-l4" href="#what-strength-voltages-and-currents-are-harmful">What strength voltages and currents are harmful?</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 1 &raquo;</li>
+        
+      
+    
+    <li>Safety</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="safety">Safety</h1>
+<p>First the bad news:</p>
+<h3 id="electricity-can-kill-you">Electricity can kill you.</h3>
+<p>How? The two most common ways are:  </p>
+<ul>
+<li>by cooking you (the hard way)</li>
+<li>by disrupting your nervous system (the easy way)</li>
+</ul>
+<p>The good news is that in ELEC 243 laboratory, you will not be exposed to
+dangerous voltage levels <em>unless</em> you mishandle the equipment. Before we get
+close enough to the equipment to mishandle it, let's take a closer look at just
+how you can get hurt if you do.</p>
+<h3 id="what-strength-voltages-and-currents-are-harmful">What strength voltages and currents are harmful?</h3>
+<p>Electricity is potentially the most dangerous commodity in general use by the
+public today. In spite of this, less than 1 percent of the 100,000 accidental
+deaths which occur annually in the United States are directly attributable to
+electrocution. Considering the ever-increasing use of electricity in the home
+and industry, we should be alert to protect and better this excellent safety
+record. An understanding of the effects of electric shock, high-frequency
+heating, and other electrically produced physiological phenomena on the human
+body should be part of basic knowledge. We present a brief survey of these
+topics in the hope that you will become aware of the very real dangers inherent
+in the application of electrical phenomena. We shall consider these dangers in
+each frequency band of the electromagnetic spectrum - from the power
+frequencies to cosmic rays.</p>
+<h4 id="power-frequencies">Power Frequencies</h4>
+<p><strong>Electric Shock.</strong> The ratio of fatalities to injuries for electric shock
+accidents is very high in comparison to the corresponding figure for all other
+accidents. <em>Death due to electric shock is fast and permanent.</em></p>
+<p><strong>Shock Sensitivity.</strong> Because of a person's highly developed nervous system,
+they are sensitive to very small currents. For example, the tongue will give a
+sensation of taste at currents as low as 45 microamperes. The threshold of
+feeling on the hand is found to be on the order of 5 mA DC and 1 mA at 60 Hz.
+The shocks due to currents at this threshold are usually considered annoying
+rather than dangerous.  However, they are startling when not anticipated, and
+may cause involuntary movement that sometimes results in serious injury. As the
+value of current increases above the threshold, one becomes aware of sensations
+of heat and contraction of the muscles. Sensations of pain develop and
+voluntary control of the muscles in the path of the current becomes
+increasingly difficult. Finally a value of current is reached where the victim
+"freezes" to the circuit. The value of current at which a victim can just
+release the electrode is referred to as "let-go" current. The average let-go
+current for healthy people is about 16 mA rms (60 Hz). It is important to note
+that let-go currents of as low as 5 mA have been measured. Experience has shown
+that an individual can withstand, with no ill aftereffect except for possible
+sore muscles, repeated exposure to their let-go current for at least the time
+required for them to release the conductor.</p>
+<p><strong>Effect of Frequency and Waveform.</strong> Gradually increasing direct current
+produces sensations of internal heating. Sudden changes of current, however,
+produce powerful muscular contractions, and interruption of the current causes
+very severe shocks. Experiments at 10 kHz indicate that the let-go current is
+approximately 3 times the 60 Hz value. For non-sinusoidal waveforms, the peak
+value seems to be the critical factor in muscular stimulation.</p>
+<p><strong>Nature of Bodily Damage.</strong> As far as gross electrical effects are concerned,
+the body can be represented by the equivalent circuit shown in the figure
+below.</p>
+<p><center>
+<img alt="" src="../figs/img151.png" />
+</center></p>
+<p>The outer skin (epidermis) is roughly 0.1 mm thick and has a resistance of the
+order of <span>\(10^5 \Omega cm^2\)</span> when dry. The inner skin (dermis)
+and the internal organs are of relatively low resistance because of their high
+salinity. It is generally believed that the effects of electric shock are due
+to the current flowing through the body. Electrical burns are a result of
+heating the skin. The immediate formation of blisters at the point of contact
+causes the skin to lose its protective resistance and more serious damage may
+thus occur. Burns of this nature penetrate quite deeply and, while they seldom
+become infected, heal very slowly. Electrical current is most dangerous when
+vital organs are in its path through the body. Current may cause stoppage of
+breathing due to excessive contraction of the chest muscles.  Temporary
+paralysis of respiration may also occur if the current produces a block in the
+nervous system that prevents signals from reaching the lungs. In either case,
+it is imperative that an approved form of artificial respiration be applied
+immediately and continued without interruption until competent medical
+examination has been made.</p>
+<p><strong>Ventricular Fibrillation.</strong> Passage of electrical current through the heart
+is considered particularly dangerous. The heart exerts its pumping action as a
+result of complex rhythmic motion controlled by periodic electrical impulses to
+the muscle tissue. The regularity of this motion assures proper blood
+circulation. Electric current passing through the heart completely upsets this
+rhythmic motion and results in random muscular contractions. The heart no
+longer effectively pumps, but quivers like so much "Jell-O". This condition is
+known as ventricular fibrillation and is nearly always fatal. Energy of the
+impulse of current is responsible for this hazard and an estimate of the danger
+threshold for fibrillation is 13.5 watt-seconds.</p>
+<h4 id="radio-frequencies">Radio Frequencies</h4>
+<p>At frequencies above the power range, the primary bodily damage results from
+dielectric heating. Heating also occurs from both conduction current and
+radiation. The temperature of the human body is maintained remarkably constant
+by very complex temperature regulating mechanisms.  These mechanisms,
+coordinated by the brain, control temperature by regulating the production and
+loss of heat. Circulation of bodily fluids contributes to the distribution of
+the heat. The change in diameter of the blood vessels, for example, regulates
+the volume and velocity of flow. However, not all areas are equally well
+regulated, and it is possible for local heating to occur. Such local heating is
+apt to be dangerous, particularly if vital organs are involved. A differential
+of <span>\(5^\circ\text{C}\)</span> maintained for a sufficient time may be injurious or even
+lethal. Testes, for example, undergo degenerate changes with temperature rises
+as low as <span>\(1^\circ\text{C}\)</span>. The amount of bodily temperature rise depends on
+the specific area exposed and its efficiency of heat elimination. Other factors
+contributing to temperature rise are intensity and the duration of exposure. At
+frequencies below the microwave region <span>\(f &lt; 1000MHz\)</span>, about 40 percent
+of the incident energy is absorbed. These frequencies cause deep (internal)
+heating and are very dangerous: such heating is not well indicated by sensory
+elements of the skin.  A tolerance figure of <span>\(0.001\text{ watt cm}^2\)</span> for
+long-term exposures has been considered adequate. Surface burns resulting from
+R.F. currents are similar to those encountered at lower frequencies.</p>
+<h4 id="microwave-frequencies">Microwave Frequencies</h4>
+<p>The effects of the lower microwave frequencies are similar to those of radio
+frequencies and a comparable tolerance figure for exposure should not be
+exceeded. As the frequency increases <span>\(f &gt; 3000MHz\)</span>, the incident energy
+is absorbed by the skin with an efficiency of 40 to 50 percent. The effects of
+such radiation are much the same as is encountered with infrared and sunlight.
+The possibility of the formation of eye cataracts must be considered at
+microwave frequencies. These cataracts result in impairment of vision or even
+blindness as a result of the formation of a white cloud in the normally
+transparent cornea of the eye. Cataracts are thought to occur in a manner
+analogous to the formation of the "white" of an egg upon heating. Experiments
+with rabbits have indicated that cataracts have formed in 3 to 9 days following
+a single 15 minute exposure to a 100 watt source of 12 cm waves at a distance
+of 5 cm.  While the exposure indicated here is probably extreme, care should be
+taken when working with high-powered radar sets.</p>
+<h4 id="infrared-visible-light-and-ultraviolet-frequencies">Infrared, Visible Light and Ultraviolet Frequencies</h4>
+<p>The immediate effects of this band of frequencies are popularly known as
+sunburn. The eye, however, is particularly susceptible to excess exposure at
+these frequencies. Such exposure can easily occur when observing an electric
+arc without protection. This may result in hemorrhages of the choriod (the
+outer lining of the retina) and actual destruction of portions of the retina
+itself. In addition, actual immediate pain may be encountered because of
+violent contractions induced in the iris. Photophthalmia (temporary snow
+blindness) is due to ultraviolet radiation following undue exposure to
+sunlight, an electric arc, or a sun lamp.</p>
+<h4 id="x-rays-and-nuclear-radiation">X-Rays and Nuclear Radiation</h4>
+<p>The effects of this portion of the electromagnetic spectrum of the human body
+are still being studied. It has been found that the amount of energy absorbed
+by the tissue during exposure is the most important consideration. Damage to
+the reproductive organs has been found to be the most sensitive indication of
+excessive exposure. Controlled experiments with mice exposed to fast neutron
+radiation from an atomic reactor indicate the type of damage sustained by
+living animals. During the first 9 months of continuous exposure, no visible
+differences were noted. The mice then began to lose weight and gradually lose
+hair. Eye cataracts developed after a year and death followed. Limited exposure
+to nuclear radiation resulted in a shortened life span. We have yet to
+completely determine the consequences of the atomic bombs of World War II in
+terms of its biological effects. For this reason, plus the fact that the latent
+period between exposure and detection of damage may run into months and years,
+it behooves us to take all precautions against X-Ray and nuclear radiation.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../background/" class="btn btn-neutral float-right" title="Background">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../" class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../background/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Writing a Labview Program - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Writing a Labview Program";
+    var mkdocs_page_input_path = "lab3/experiment_3-2.md";
+    var mkdocs_page_url = "/lab3/experiment_3-2/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Writing a Labview Program</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#experiment-32">Experiment 3.2</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#writing-a-labview-program">Writing a Labview Program</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 3 &raquo;</li>
+        
+      
+    
+    <li>Writing a Labview Program</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="experiment-32">Experiment 3.2</h1>
+<h2 id="writing-a-labview-program">Writing a Labview Program</h2>
+<p>If all we could with Labview was to make computer based copies of our
+conventional instruments, it would be of limited use. What makes Labview so
+valuable is that it is <em>programmable</em>. By changing the program a single box
+(the Lab PC) can perform the functions of a large collection of instruments,
+both conventional and unconventional.</p>
+<p>Perhaps the greatest advantage of Labview however, is that it is <em>user</em>
+programmable: if no instrument is available which meets your requirements, you
+can modify an existing one or create an entirely new one.</p>
+<p>Our goal for this Experiment will be to measure the resistance of the
+thermistor and display the result directly as a temperature reading.  Since the
+DAQ card can only measure voltage, our first step is to convert the resistance
+to a measurable voltage. As an example of how this could be done, consider the
+circuit below:</p>
+<p><center>
+<img alt="" src="../figs/img227.png" />
+</center></p>
+<p>By measuring the voltage drop (<span>\(V_{res}\)</span>) across the <span>\(10\Omega\)</span> resistor we can
+compute the current <span>\(I\)</span>. Since the same current flows in both the resistor and
+the bulb, we can compute the resistance of the bulb as <span>\(R_{bulb}=V_{bulb}/I\)</span>.
+If <span>\(V_{bat}\)</span> is known, we can determine <span>\(V_{res}\)</span> indirectly using KVL:
+<span>\(V_{res} = V_{bat} - V_{bulb}\)</span>.</p>
+<p>For our application, we need to replace the light bulb with the thermistor.
+Since the thermistor has a much higher resistance, we should also replace the
+<span>\(10\Omega\)</span> resistor with one closer to the nominal resistance of the
+thermistor, in this case <span>\(10k\Omega\)</span>. In addition, since our goal is to measure
+temperature we will need to convert the measured resistance into a displayed
+temperature reading.</p>
+<h3 id="part-a-a-very-simple-vi">Part A: A Very Simple VI</h3>
+<p>To get started with Laview programming, we will start with the
+measurement of a single voltage.</p>
+<ol>
+<li>
+<p>Use a BNC-Banana adapter and a BNC patch cable to connect the 0-6 V power
+   supply to J1.</p>
+</li>
+<li>
+<p>Wire the following circuit</p>
+<p><center>
+<img alt="" src="../figs/img228.png" />
+</center></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><span>\(R_T\)</span> is the thermistor.  Because the thermistor leads are very thin,
+you will probably need to use your needle nose pliers to hold them very
+near the ends in order to insert them into the breadboard without
+bending.</p>
+</div>
+</li>
+<li>
+<p>Using your DMM, set the <span>\(0-6 V\)</span> supply output (<span>\(V_S\)</span>) to <span>\(5.00 V\)</span>. Measure
+   <span>\(V_T\)</span> with your DMM. Since the nominal value of <span>\(R_T\)</span> is <span>\(10 k\Omega\)</span>, it
+   should be approximately <span>\(2.5 V\)</span>. If not, adjust <span>\(R_S\)</span> so that the voltage is
+   around <span>\(2.5 V\)</span>.</p>
+</li>
+<li>
+<p>Since we are going to build a VI from scratch, we will start with a new,
+   blank VI. Select "New VI" from the "File" menu. A pair of windows should
+   appear. The one on top will be a blank Front Panel window and the one on the
+   bottom is a blank Block Diagram window.</p>
+</li>
+<li>
+<p>We will first measure <span>\(V_T\)</span> and display its value.</p>
+</li>
+<li>
+<p>Right click on the Front Panel window. You will get the Controls popup:</p>
+<p><center>
+<img alt="" src="../figs/grab04.png" />
+</center></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Place the cursor over the Numeric button and select Numeric Indicator.
+Place this box and left click. The fact that the word "Numeric" is
+highlighted means that it is selected and can be edited. Change the
+name to "VT" by double-clicking.</p>
+</div>
+</li>
+<li>
+<p>Now we need something for the indicator to display. Click on the Block
+   Diagram window to bring it to the top. Note that placing the indicator on
+   the front panel has also placed a block on the block diagram.</p>
+<p><center>
+<img alt="" src="../figs/grab14.png" />
+</center></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This block is the <em>icon</em> associated with the indicator. We can provide
+values for it to display by connecting it to a signal source. The
+source we will use will be one of the A/D converter inputs.</p>
+</div>
+</li>
+<li>
+<p>Right-click on the Block Diagram window to bring up the Functions palette.</p>
+<p><center>
+<img alt="" src="../figs/grab10.png" />
+</center></p>
+</li>
+<li>
+<p>From the Functions popup, select Express <span>\(\rightarrow\)</span> Input <span>\(\rightarrow\)</span>
+   DAQ Assist.</p>
+<p><center>
+<img alt="" src="../figs/grab12.png" />
+</center></p>
+</li>
+<li>
+<p>Position this somewhere to the left of the Graph indicator block and left
+    click.</p>
+</li>
+<li>
+<p>After a second or two the "Create New .." wizard will appear.</p>
+<p><center>
+<img alt="" src="../figs/grab13b.png" />
+</center></p>
+</li>
+<li>
+<p>Click on "Acquire Signals" in the righthand column, then click on "Analog
+    Input" then on "Voltage" in the list that appears.</p>
+<p><center>
+<img alt="" src="../figs/grab15a.png" />
+</center></p>
+</li>
+<li>
+<p>From the list of Supported Physical Channels that appears, select "ai5",
+    then click the "Finish" button at the bottom of the frame.</p>
+<p><center>
+<img alt="" src="../figs/grab16.png" />
+</center></p>
+</li>
+<li>
+<p>After another brief wait, the "DAQ Assistant" dialog appears. In the "Input
+    Range" block set "Max" to 10 Volts and "Min" to -10 Volts. Set the
+    "Acquisition Mode" to "1 Sample (On Demand)". The panel should look like
+    this when you are done.  Click the "OK" button when you're done.</p>
+<p><center>
+<img alt="" src="../figs/grab17b.png" />
+</center></p>
+</li>
+<li>
+<p>Things will click and whir for several seconds. When it's all over, the
+    "DAQ Assistant" box will have expanded, and should have a white band with
+    the word "data" in it.</p>
+<p><center>
+<img alt="" src="../figs/grab19.png" />
+</center></p>
+</li>
+<li>
+<p>We're almost done. All that remains is to connect the source (A/D converter
+    block) to the destination (numeric indicator block).</p>
+</li>
+<li>
+<p>Place the cursor over the small black triangle in the "data" field of the
+    DAQ Assistant block. It should change into an icon representing a small
+    spool of wire. Left click once and move the cursor to the small white
+    triangle in the center of the left edge of the numeric indicator icon and
+    left click once more. That completes our first Labview program.  It should
+    look something like this:</p>
+<p><center>
+<img alt="" src="../figs/grab76.png" />
+</center></p>
+<p><center>
+<img alt="" src="../figs/dot_clear.gif" />
+</center></p>
+</li>
+</ol>
+<h4 id="data-types">Data Types</h4>
+<p>Notice that the color of the icon for the waveform graph changed from orange to
+blue. This is an indication that the type of data which it is displaying has
+changed. Like many programming languages (e.g. C) Labview maintains the notion
+of <em>data types</em>. Labview's data types include familiar ones such as integer,
+floating point, boolean, and string, as well as a number of unfamiliar ones
+(which we will try to avoid for the time being). Labview denotes data type by
+the color of the wire which carries it: integer wires are blue, floating point
+wires are orange, boolean wires are green, and strings are pink. Labview also
+supports collection types, such as arrays and structures. Scalars are denoted
+by thin solid lines, arrays by thick solid lines, and other collections by
+various patterned lines. The wide dark blue lines with internal dashes are a
+composite data type called <em>dynamic data</em>.</p>
+<p>Dynamic data contains a lot of information in addition to the value of the
+sample, for example, the time at which the sample was taken, whether any errors
+were made in previous handling of the sample, etc. This means that when we
+connect our signal to the waveform display, it can automatically display the
+correct time scale on the x-axis, rather than just the sample number.</p>
+<ol>
+<li>
+<p>Click on the Front Panel window to bring it to the top. Run the VI by
+   clicking on the Run arrow or by typing Ctrl-R. The <code>VT</code> nemeric indicator
+   should display the voltage across <span>\(R_T\)</span>, which should still be about <span>\(2.5 V\)</span></p>
+</li>
+<li>
+<p>Select <code>Save As...</code> from the <code>File</code> menu. Set the <code>Save in:</code> field to an
+   appropriate directory (i.e., your user directory).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Always set the destination directory when saving a VI. Never try to
+save a VI in the default directory.</p>
+</div>
+</li>
+</ol>
+<h3 id="part-b-converting-voltage-to-resistance">Part B: Converting Voltage to Resistance</h3>
+<p>So far we're no better off than we would have been using the DMM. In fact we're
+worse off since all we have is a voltage. The DMM at least can read resistance
+directly. But given <span>\(V_S\)</span>, <span>\(V_T\)</span>, and Ohm's Law we can calculate resistance,
+and computers are very good at calculating things.</p>
+<p>There are two ways we could formulate this calculation. We could do it in two
+steps, first computing <span>\(I_T=I_S=(V_S-V_T)/R_S\)</span>, then using Ohm's Law to get
+<span>\(R_T=V_T/I_T\)</span>. Alternately, we could treat the circuit as a voltage divider,
+which gives</p>
+<span>\[
+R_T=\frac{V_T}{V_S-V_T}R_S
+\]</span><p>Because we will be interested in <span>\(I_T\)</span> in a subsequent Experiment, we will use
+the first approach.</p>
+<ol>
+<li>
+<p>On the front panel, create a new numeric indicator and label it <code>IT</code>.</p>
+</li>
+<li>
+<p>In order to compute the current we will have to do some arithmetic on the
+   <span>\(V_T\)</span> signal. Go to the block diagram window and right-click to get the
+   <code>Functions</code> palette.  Select Programming <span>\(\rightarrow\)</span> Numeric:</p>
+<p><center>
+<img alt="" src="../figs/grab23a.png" />
+</center></p>
+</li>
+<li>
+<p>This has everything we need: subtraction, division, and constants (for <span>\(V_S\)</span>
+   and <span>\(R_S\)</span> ).</p>
+</li>
+<li>
+<p>Let's start with the subtraction. Move the cursor over the symbol labeled
+   <code>Subtract</code> and left click. Position the icon below the existing components
+   on the diagram and left click to put it down. Note that while the cursor is
+   over the symbol there are three small circles near the vertices of the
+   triangle.</p>
+<p><center>
+<img alt="" src="../figs/grab24.png" />
+</center></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These indicate the connection points and will disappear when the cursor
+moves away.</p>
+</div>
+</li>
+<li>
+<p>Repeat the above process, but select the <code>Divide</code> symbol. Place it slightly
+   to the right and a little lower than the subtract icon.</p>
+</li>
+<li>
+<p>Now let's do the constants, starting with <span>\(V_S\)</span>. Select Numeric Constant
+   from the Numeric palette and place the resulting block above and to the left
+   of the subtract icon. The highlighted text indicates that you can enter a
+   new value. Type <code>5</code> and press <code>Enter</code> or click the check box at the upper
+   left of the window. Repeat this process, placing the icon for <span>\(R_S\)</span> below
+   and to the right of the divide icon. Enter a value of 10000. Here's what you
+   should have at this point:</p>
+<p><center>
+<img alt="" src="../figs/grab25.png" />
+</center></p>
+</li>
+<li>
+<p>All that remains is to make the connections. Wire the blocks together
+   appropriately. A couple of things to note:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>The position of the terminals on the arithmetic blocks corresponds to
+the conventions of grade school arithmetic. For subtract the minuend is
+on top and the subtrahend is on the bottom.For divide the dividend is
+on top and the divisor on the bottom.</li>
+<li>To connect to an existing wire (in this case the one between the A/D
+converter block and the <code>VT</code> display block), move the cursor <em>near</em>,
+but not directly on, the wire. If you place the cursor on the wire it
+will turn into an arrow, indicating that you can select the wire.</li>
+</ul>
+</div>
+</li>
+<li>
+<p>When you're done it should look something like this:</p>
+<p><center>
+<img alt="" src="../figs/grab26.png" />
+</center></p>
+</li>
+<li>
+<p>Let's test what we have so far. Go to the front panel and click on the <code>Run</code>
+   button. If all is well, <span>\(V_T\)</span> should still be about 2.5 V and <span>\(I_T\)</span> should
+   be about 0.00025 A.</p>
+</li>
+<li>
+<p>Now that we have found the current in the thermistor, finding the
+    resistance is easy: just divide <span>\(V_T\)</span> (which we measured directly) by <span>\(I_T\)</span>
+    (which we just computed).  To do this we need to add another numeric
+    indicator to the front panel and a divide block to the block diagram. Let's
+    put the indicator to the right of the two existing ones (and label it <code>RT</code>.</p>
+<p><center>
+<img alt="" src="../figs/grab27.png" />
+</center></p>
+</li>
+<li>
+<p>On the block diagram, place another divide block to the left of the <code>RT</code>
+    indicator block. Wire it up so that <span>\(R_T=V_T/I_T\)</span> and here's what we have:</p>
+<p><center>
+<img alt="" src="../figs/grab28.png" />
+</center></p>
+</li>
+<li>
+<p>Test the VI by clicking <code>Run</code> from the front panel. The <code>RT</code> indicator
+    should display a value close to 10000.</p>
+</li>
+</ol>
+<h3 id="part-c-converting-r-to-t">Part C: Converting R to T</h3>
+<p>Given this value of the resistance and the information on the <a href="https://na.industrial.panasonic.com/sites/default/pidsa/files/downloads/files/series_ert-d_pdn_03.15.08.pdf">thermistor data
+sheet</a>,
+we can calculate the temperature.</p>
+<ol>
+<li>
+<p>Based on the information in the thermistor data sheet, derive a formula
+   which gives the temperature (your choice of <span>\(K, ^\circ C,\)</span> or <span>\(^\circ F\)</span>) in terms of the
+   resistance of the thermistor.</p>
+</li>
+<li>
+<p>We could perform this computation the same way we did for resistance, by
+   using a numeric operation block for each addition, division, etc. in the
+   formula, but for a formula like this there is a more efficient and compact
+   approach, the <em>formula node</em>.</p>
+</li>
+<li>
+<p>In the Block Diagram window, right click to bring up the <code>Functions</code>
+   palette. Move the cursor to Programming <span>\(\rightarrow\)</span> Structures. Click on
+   the <code>Formula Node</code> button.</p>
+</li>
+<li>
+<p>The formula node is a variable sized block, so it is instantiated by
+   clicking on the desired location of the upper right corner and dragging to
+   create the desired size. Move the cursor to a convenient spot on the block
+   diagram, preferably near the <code>RT</code> indicator icon, then click, drag, and
+   release to create the formula node. It should look like this:</p>
+<p><center>
+<img alt="" src="../figs/grab34a.png" />
+</center></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to find out more about the components in the
+block diagram, you can turn on the <em>Context Help</em> feature: select
+<code>Show Context Help</code> from the <code>Help</code> menu. When context help is turned
+on, a window (labeled <code>Context Help</code>) appears in the upper right corner
+of the screen. When the cursor is moved over any component in the block
+diagram, a brief description and a link to additional information
+appears.</p>
+</div>
+</li>
+<li>
+<p>Let's start with the formula. As an example, we'll use
+   <span>\(T=300\frac{10000}{RT}\)</span>. (If you got this formula, you should check your
+   derivation, as it is not correct.) Since we can't type subscripts in
+   labview, we will use <span>\(RT\)</span> in place of <span>\(R_T\)</span>. To enter this into the formula
+   node, simply place the cursor inside the block, right click, and start
+   typing. The formula node uses the C language syntax, and each statement must
+   end with a semicolon; When you have finished, click on the check box (or
+   anywhere outside the formula node box).</p>
+</li>
+<li>
+<p>At this point you may have noticed a change in the appearance of the
+   toolbar: the run button has changed from a white arrow to a gray broken
+   arrow ( <img alt="" src="../figs/grab35.png" /> ). This means that there is an error
+   in the block diagram and the VI won't run. To find out what the error is,
+   click on the broken arrow button.</p>
+<p>If you do this you should find that the problem is an undefined variable.
+Actually, there are two: <span>\(T\)</span> and <span>\(RT\)</span> . We will define these in the next step
+when we create the input and output terminals.  </p>
+</li>
+<li>
+<p>Place the cursor somewhere on the left-hand border of the formula node and
+   right-click. Select <code>Add Input</code> from the popup menu. This should create a
+   small rectangular box in the border. The highlighted (black) interior of the
+   box is a selected text field. Type <code>RT</code> and click the check box. Repeat this
+   process on the right-hand border, but select <code>Add Output</code> and type <code>T</code> into
+   the box.</p>
+</li>
+<li>
+<p>The arrow is still broken, but now the error message complains of an
+   "unwired input." Let's try to fix that: connect the input (RT) to the wire
+   between the division block and the numeric indicator which displays the
+   value of <span>\(R_T\)</span>.</p>
+<p>Unfortunately, this seems to have made things worse. Not only is the arrow
+still broken, but we also have a broken wire. (Broken wires are indicated
+by dashed lines with a red X in the middle.) The error list tells us: "You
+have connected two terminals of different types."</p>
+<p>Dynamic data contains a lot of information in addition to the value of the
+sample, for example, the time at which the sample was taken, whether any
+errors were made in previous handling of the sample, etc. Dynamic data
+usually makes life easer for us by bundling ancillary information along
+with a signal so we don't have to be concerend about carrying it around
+separately, but at the moment it's causing problems. While most blocks
+(e.g. subtract, divide, numeric indicator) can accept any appropriate data
+type, including dynamic, others are more picky about what they will take.
+For example, the formula node expects ordinary, pure numeric data and
+doesn't know what to do with the additional stuff contained in dynamic
+data. We can fix this by converting the dynamic data to scalar data.</p>
+</li>
+<li>
+<p>Remove the offending broken wire. To do this, place the cursor directly over
+   the wire, so that it turns into an arrow, and double click. Press the
+   <code>Delete</code> key.</p>
+</li>
+<li>
+<p>Right click to bring up the <code>Functions</code> palette. Select Express
+    <span>\(\rightarrow\)</span> Sig Manip button to bring up the Signal Manipulation palette.</p>
+<p><center>
+<img alt="" src="../figs/grab37.png" />
+</center></p>
+</li>
+<li>
+<p>From this select the <code>From DDT</code> block. Place this just to the left of the
+    <code>RT</code> terminal of the formula node.</p>
+</li>
+<li>
+<p>When you place the <code>From DDT</code> block, a dialog box labeled "Configure
+    Convert from Dynamic Data" will appear. In the <code>Resulting data type</code> field,
+    select <code>Single Scalar</code>, then click <code>OK</code>.</p>
+</li>
+<li>
+<p>Wire the output of the <code>From DDT</code> block to the <code>RT</code> terminal of the formula
+    node. Connect the input of the <code>From DDT</code> block to the wire between the
+    division block and the <code>RT</code> numeric indicator. The arrow should now be
+    unbroken.</p>
+</li>
+<li>
+<p>Now display the value of temperature by placing another numeric indicator
+    on the front panel and labeling it <code>T</code>. Return to the block diagram, and
+    wire the new indicator icon to the <code>T</code> terminal of the formula node. Here's
+    what you should have:</p>
+<p><center>
+<img alt="" src="../figs/grab39a.png" />
+</center></p>
+</li>
+<li>
+<p>Return to the front panel and press the run button. The <code>T</code> indicator will
+    display the current temperature.</p>
+</li>
+</ol>
+<h3 id="part-d-continuous-display">Part D: Continuous Display</h3>
+<p>Although we have technically achieved our goal of measuring and displaying
+temperature, we can only do so on demand. It would be much more useful if we
+had a system which could continuously display the current temperature.
+Fortunately, this is a simple enhancement to make.  Like more conventional
+programming languages, Labview has looping and branching constructs. What we
+need here is the <em>while loop</em> which repeats its contents until an exit
+condition is met.</p>
+<ol>
+<li>
+<p>Right click in the block diagram to bring up the <code>Functions</code> palette.
+   Select Structures. Click on the <code>While Loop</code> button.</p>
+<p><center>
+<img alt="" src="../figs/grab41.png" />
+</center></p>
+</li>
+<li>
+<p>This is a variable sized block, like the formula node, and we want it to
+   enclose everything we currently have in our VI. Click on the panel, and
+   enclose your entire block diagram with the while loop.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note the green-bordered block labeled <code>stop</code> in the lower right corner
+of the while loop. This is a free accessory that allows us to stop the
+loop, which would otherwise run forever. This block is an example of a
+<em>control</em>. A control is the dual of an indicator, i.e. it provides
+input from the front panel to the block diagram. Go to the front panel
+and notice that there is a new object, a button labeled <code>STOP</code>.
+Pressing this button causes the associated icon to output a True value
+(when the button is not pressed, the output is False).</p>
+</div>
+</li>
+<li>
+<p>From the front panel, press the <code>Run</code> button. The indicators should now
+   display continuously updated values. To convince yourself that these aren't
+   random, grab the body of the thermistor between your thumb and forefinger,
+   being careful not to touch the leads. The displayed temperature should
+   increase. Press the <code>STOP</code> button when done.</p>
+</li>
+<li>
+<p>The updating of the display, while certainly continuous, might be too fast
+   to read. This is because new samples are being taken and displayed as fast
+   as the A/D converter is able to take them (1,250,000 samples/second), which
+   is much faster than any phenomenon we might bring into the lab is capable of
+   changing its temperature. The net result is wasted processor power and a
+   blurry display which is difficult to read.</p>
+<p>There are a number of ways in which we can set the sampling rate to a more
+reasonable value. We will utilize one which requires minimal change to what
+we have already constructed.</p>
+</li>
+<li>
+<p>Return to the block diagram and go to Functions <span>\(\rightarrow\)</span> Programming
+   <span>\(\rightarrow\)</span> Timing.  Select the <code>Time Delay</code> block</p>
+<p><center>
+<img alt="" src="../figs/grab42.png" />
+</center></p>
+<p>and place it in a convenient location inside the while loop. Accept the
+default delay of 1 second by clicking <code>OK</code> in the <code>Configure Time Delay</code>
+dialog box. (If the block automatically wires itself to something, remove
+the resulting wire.)</p>
+</li>
+<li>
+<p>Return to the front panel and click <code>Run</code>. The display should now update at
+   a more leisurely rate.</p>
+</li>
+<li>
+<p>Be sure to include a screenshot of your block diagram in your lab writeup.</p>
+</li>
+<li>
+<p>Save your work as we will make further enhancements to this program next
+   week.</p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../lab4/" class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../experiment_3-1/" class="btn btn-neutral" title="Voltage and Waveform Measurements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../experiment_3-1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../lab4/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

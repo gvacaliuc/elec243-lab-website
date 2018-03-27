@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Frequency Response - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Frequency Response";
+    var mkdocs_page_input_path = "lab6/experiment_6-2.md";
+    var mkdocs_page_url = "/lab6/experiment_6-2/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Frequency Response</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#experiment-62">Experiment 6.2</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#frequency-response">Frequency Response</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 6 &raquo;</li>
+        
+      
+    
+    <li>Frequency Response</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="experiment-62">Experiment 6.2</h1>
+<h2 id="frequency-response">Frequency Response</h2>
+<h3 id="equipment">Equipment</h3>
+<ul>
+<li>Test board</li>
+<li>1k<span>\(\Omega\)</span> and 100<span>\(\Omega\)</span> resistors</li>
+<li>0.1 <span>\(\mu F\)</span> capacitor</li>
+<li>LM741 opamp</li>
+<li>Lab computer or laptop</li>
+</ul>
+<h3 id="part-a-measuring-frequency-response">Part A: Measuring Frequency Response</h3>
+<p>In this part of the lab you will use look at the frequency response of an op
+amp circuit called an integrator (which does exactly that...  integrates the
+input).</p>
+<ol>
+<li>
+<p>Build the following circuit. For the input, connect a 1 Vp-p sinusoidal
+   signal from your VirtualBench function generator.</p>
+<p><center>
+<img alt="" src="../figs/spiceintegrator.png" />
+</center></p>
+</li>
+<li>
+<p>Record the peak-to-peak output voltage values for the following frequencies:
+   10Hz, 100Hz, 500 Hz, 800 Hz, 1kHz, 1.5kHz, 2kHz, 5kHz, 10kHz, 50kHz.</p>
+</li>
+<li>
+<p>At the same above frequencies, record the phase shift between input and
+   output.</p>
+</li>
+<li>
+<p>In VirtualBench, use your vertical cursors to make this phase measurement:
+   pick a salient feature of your signal (i.e., peak, or zero crossing of
+   signal) and measure the time difference delta-t between when your input and
+   output signal exhibit that salient feature. If you use cursors, the
+   difference between cursor points should appear below the oscilloscope
+   window. Make sure you zoom in each time you increase frequency, to ensure
+   similar accuracy of values. Phase is <span>\((\Delta-t)*2*pi/T\)</span>, where <span>\(T\)</span> is the
+   period.</p>
+</li>
+<li>
+<p>Plot Gain(dB) vs. Frequency (Hz) in Matlab.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><span>\(\text{gain (db) } = 20*log_{10}(V_{out} / V_{in})\)</span></p>
+</div>
+</li>
+<li>
+<p>At what frequency does the gain begin to drop?</p>
+</li>
+<li>
+<p>This is called the cutoff frequency, <span>\(f_c\)</span>, <strong>does it roughly equal
+   <span>\(f_c=1/(2 * \pi * R_5 * C_2)\)</span>?</strong></p>
+</li>
+</ol>
+<h3 id="part-b-circuit-simulation">Part B: Circuit Simulation</h3>
+<p>The remainder of the lab can be done from a computer (lab computer or personal
+laptop). We will be using circuit simulation software called LTSpice. Spice
+stands for (Simulation Program with Integrated Circuit Emphasis).</p>
+<ol>
+<li>
+<p>Download LTspice from linear.com there are Windows and Mac versions
+   available. Please note that the instructions below are specifically for
+   Windows.</p>
+</li>
+<li>
+<p>Click on New Schematic and create the same circuit you built on your
+   breadboard shown above.</p>
+</li>
+<li>
+<p>Place components by going to the Edit menu or shortcut buttons.</p>
+</li>
+<li>
+<p>The opamp is found under Edit <span>\(\rightarrow\)</span> Components <span>\(\rightarrow\)</span>
+   [OpAmps] <span>\(\rightarrow\)</span> opamp.  The voltage source is found under Edit
+   <span>\(\rightarrow\)</span> Components <span>\(\rightarrow\)</span> voltage.  Connect components using
+   Edit <span>\(\rightarrow\)</span> Wire (or the shortcut button F3).</p>
+</li>
+<li>
+<p>Other convenient shortcuts are:</p>
+<ul>
+<li>Ctrl-R for Rotate</li>
+<li>Delete, or F5 for Delete</li>
+<li>F6 for Copy</li>
+<li>F7 for Move</li>
+<li>F8 for Drag</li>
+<li>Esc to exit out of a mode</li>
+</ul>
+</li>
+<li>
+<p>The component opamp is just a symbol of an opamp and in order for Spice to
+   see the model, you need to place a Spice Directive calling the location:
+   Edit <span>\(\rightarrow\)</span> Spice Directive. Then enter <code>.lib opamp.sub</code></p>
+</li>
+<li>
+<p>Set the voltage source to AC by right-clicking it and selecting Advanced.
+   Set AC amplitude to 1.</p>
+</li>
+<li>
+<p>Enter in <span>\(R\)</span> and <span>\(C\)</span> values by right-clicking these components.</p>
+</li>
+<li>
+<p>Optional label nets (i.e., wires) by right-clicking on nets.</p>
+</li>
+<li>
+<p>Perform an AC analysis. An AC analysis will evaluate the gain
+    (<span>\(V_{out}\)</span>/<span>\(V_{in}\)</span>) and phase over a specified range of frequencies and
+    plot it.</p>
+</li>
+<li>
+<p>Click on the Running Man icon and select AC analysis (or go to Simulate
+    <span>\(\rightarrow\)</span> Run).</p>
+</li>
+<li>
+<p>Use a decade frequency sweep with at least 10 points per decade over the
+    range of 1 Hz to 10 MHz. This will appear as a Spice directive on your
+    schematic as</p>
+<p><code>.ac dec 10 1 10meg</code></p>
+</li>
+<li>
+<p>Click on the <span>\(V_{out}\)</span> node for gain and phase plots to appear. You will
+    notice that the gain is displayed in dB and phase in degrees. The x-axis
+    will be logarithmic, i.e., the step size is 10n, where n is 0,1,2 Each of
+    the steps is called a decade (dec).</p>
+</li>
+<li>
+<p>Take a screenshot of your plots.</p>
+</li>
+<li>
+<p><strong>What is the gain at low frequencies? What is the cutoff frequency?  What
+    is the slope of the gain with respect to frequency for high frequencies
+    (express in terms of dB/dec)? Do these values match what you measured on
+    your breadboard?</strong></p>
+</li>
+<li>
+<p><strong>What is the phase for very low frequencies? At 0dB? And for very high
+    frequencies? Can you explain why?</strong></p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../lab7/" class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../experiment_6-1/" class="btn btn-neutral" title="Transducer Amplifiers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../experiment_6-1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../lab7/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

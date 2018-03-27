@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Labview as a Source of Signals - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Labview as a Source of Signals";
+    var mkdocs_page_input_path = "lab4/experiment_4-1.md";
+    var mkdocs_page_url = "/lab4/experiment_4-1/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../introduction/">Introduction</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Labview as a Source of Signals</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#experiment-41">Experiment 4.1</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#labview-as-a-source-of-signals">Labview as a Source of Signals</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab7/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-2/">Recording a Reference Signal</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab7/experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 4 &raquo;</li>
+        
+      
+    
+    <li>Labview as a Source of Signals</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="experiment-41">Experiment 4.1</h1>
+<h2 id="labview-as-a-source-of-signals">Labview as a Source of Signals</h2>
+<p>Last week we looked at the ability of Labview to measure and display external
+signals. These included voltages and other physical variables which we could
+represent as voltages. This week we will start by looking at the other
+direction: using Labview to <em>generate</em> signals. These will also be voltages,
+which we can then use in their own right or transform into other physical
+variables.</p>
+<p>In this Experiment we will practice signal generation techniques on a new,
+blank VI. When we are confident of our skills, we will use them to make
+improvements to the VI we built last week in Experiment 3.2.</p>
+<h3 id="part-a-generate-a-fixed-voltage">Part A: Generate a Fixed Voltage</h3>
+<p>Let's start with something simple: a VI that puts out a constant 1 volt signal.
+Not very exciting, but we can add enhancements until it does something useful.</p>
+<p>Recall that the DAQ card has two analog voltage outputs: <code>dac0</code> and <code>dac1</code>.
+Unlike the analog inputs which have different sensitivities, there's no real
+difference between these, so we'll arbitrarily choose <code>dac0</code> for our output.</p>
+<ol>
+<li>
+<p>Use a BNC patch cable to connect <code>J1-1</code> to <code>CH 1</code> of the oscilloscope.  On
+   the breadboard, connect <code>J1-1</code> (pin 1) to <code>dac0</code> (pin 51).</p>
+</li>
+<li>
+<p>Start Labview and open a new, blank VI. Since we want this VI to run
+   continuously, go to the block diagram window and create a large while loop.
+   There is a shortcut to creating an input or output block to any placed
+   block. We can use this shortcut to create a Stop button for the while loop.
+   Hover over the input pin of the loop condition (red dot) and the arrow
+   cursor will turn into a spool of wire cursor. Right-click on the input pin
+   and dialog box appears:</p>
+<p><center>
+<img alt="" src="../figs/grab42b.png" />
+</center></p>
+</li>
+<li>
+<p>There are three types of entries possible - a constant, a control (which is
+   a user-controlled variable) or an indicator (i.e., a numeric or graphical
+   display). Click on Create Control, and a stop button appears.</p>
+</li>
+<li>
+<p>We create D/A output blocks in nearly the same way we did A/D input blocks,
+   using the DAQ Assistant. Go to SignalExpress <span>\(\rightarrow\)</span> DAQ Assistant, then place
+   the resulting block inside the while loop, somewhere in the right-hand half.</p>
+</li>
+<li>
+<p>Select Generate Signals <span>\(\rightarrow\)</span> Analog Output <span>\(\rightarrow\)</span> Voltage.
+   From the list of Supported Physical Channels, select <code>ao0</code>, then click the
+   <code>Finish</code> button at the bottom of the frame.</p>
+</li>
+<li>
+<p>Set the <code>Output Range</code> to have a <code>Max</code> of 10 Volts and a <code>Min</code> of -10 Volts.
+   Set the <code>Generation Mode</code> to <code>1 Sample (On Demand)</code>. When finished, click
+   the <code>OK</code> button. The block will expand, and a white band containing the word
+   <code>data</code> will appear.</p>
+</li>
+<li>
+<p>On the left-hand side of the while loop, place a numeric constant and set
+   the value set to 1.</p>
+</li>
+<li>
+<p>Wire the constant to the <code>data</code> input of the D/A output block. Our first
+   signal generating VI is finished.</p>
+</li>
+<li>
+<p>Press <code>Run</code> and verify on the oscilloscope that the output is set to 1 volt.</p>
+</li>
+</ol>
+<h3 id="part-b-input-from-the-front-panel">Part B: Input from the Front Panel</h3>
+<p>As we'll see shortly, being able to output/ produce a fixed voltage is a useful
+capability. But being able to change the value of that voltage would make it
+even more useful. We could do this by editing the value of the numeric
+constant, but we would have to stop the VI each time we wanted to make a
+change. It would be much easier if we could do this from the front panel.
+Fortunately, we are able to do this by using a <em>numeric control</em>, which is the
+dual of a numeric indicator, i.e.  instead of displaying a value it allows you
+to enter one.</p>
+<ol>
+<li>
+<p>Go to the front panel and press the <code>Stop</code> button. (VIs can't be edited
+   while they are running).</p>
+</li>
+<li>
+<p>Delete the numeric constant input. Right-click on the input pin to data and
+   select Create.</p>
+<p><center>
+<img alt="" src="../figs/grab42c.png" />
+</center></p>
+</li>
+<li>
+<p>Select Control. Change the label to <code>Vout</code>.</p>
+</li>
+<li>
+<p>Find the newly created numeric control on the Front Panel. A shortcut for
+   this is to right-click on it in the block diagram and select Find Control.
+   This will bring up the block diagram with the associated icon selected.</p>
+</li>
+<li>
+<p>Press the <code>Run</code> button. If the numeric control still contains the default
+   value (zero), the signal displayed on the scope should fall to zero.</p>
+</li>
+<li>
+<p>With the VI still running, double click over the <code>Vout</code> control and type in
+   a new value (between -10 and 10). Press <code>Enter</code> or click the check box. The
+   signal on the scope should jump to the value that you entered.</p>
+</li>
+<li>
+<p>Try typing in a few more values. When the excitement has faded, stop the VI.</p>
+</li>
+<li>
+<p>Typing in a number is a convenient way to precisely set a value, but for
+   quick changes, something like a knob is more suitable. On the Front Panel,
+   right-click over the <code>Vout</code> control and select <code>Replace</code>. This will bring up
+   a palette of objects with which this control may be replaced. From this
+   palette, select Numeric <span>\(\rightarrow\)</span> Vertical Pointer Slide.</p>
+<p><center>
+<img alt="" src="../figs/grab45.png" />
+</center></p>
+</li>
+<li>
+<p>Start the VI. Place the cursor over the white triangular portion of the
+   slider left click, and drag the pointer up and down. The signal on the scope
+   should rise in fall in response.</p>
+</li>
+<li>
+<p>Change the lower limit on the slider from the default value (0) to -10 by
+    double-clicking the default 0 lower limit. You should now be able to vary
+    the output over the full range of -10 volts to +10 volts.</p>
+</li>
+</ol>
+<h3 id="part-c-a-function-generator-vi">Part C: A Function Generator VI</h3>
+<p>Now let's try changing the input to a mathematical function.</p>
+<p>We will have Labview compute the value of <span>\(sin(\omega)\)</span> at regularly spaced
+values of <span>\(t\)</span>, then set the D/A output to that value during the corresponding
+interval. The tricky part is keeping the values of <span>\(t\)</span> at which we update the
+output regularly spaced. In Part D of Experiment 3.2 we took samples of the A/D
+input value at 1 second intervals by placing a 1 second delay block inside the
+while loop. This is satisfactory for long intervals (like 1 second), but as we
+try to generate more closely spaced samples (think of that 1 kHz sine wave) the
+scheduling uncertainty of Windows will make the sample spacing very irregular.</p>
+<p>The solution is to do the sampling in hardware, on the DAQ card, directly at
+the A/D or D/A converter. If we buffer a sufficient number of samples,
+irregularities in processing them can be smoothed out and the actual input and
+output values will change at consistently correct times. In order for this to
+work, we need to generate and process samples in blocks or buffers containing a
+fixed number of samples.  Labview provides for this with the <code>array</code> data type.</p>
+<ol>
+<li>
+<p>Stop the VI. Go to the block diagram and disconnect the slider output from
+   the D/A converter input. Move the slider icon out of the way, but don't
+   delete it; we'll use it again a bit later.</p>
+</li>
+<li>
+<p>Go to Functions <span>\(\rightarrow\)</span> Express <span>\(\rightarrow\)</span> Signal Analysis
+   <span>\(\rightarrow\)</span> Simulate Sig...  Place the <code>Simulate Signal</code> block to the left
+   of the <code>DAQ Assistant</code> block and left click to place it. In the <code>Configure
+   Simulate Signal</code> accept the default values and click <code>OK</code> A white band
+   labeled <code>Sine</code> will appear at the bottom of the block. Wire the <code>Sine</code>
+   output of this block to the <code>data</code> input of the D/A block. Double click on
+   the D/A block or right click and select <code>Properties</code> from the menu. Change
+   the <code>Generation Mode</code> from <code>1 Sample (On Demand)</code> to <code>Continuous</code>. Click
+   <code>OK</code> and wait for everything to settle down.</p>
+</li>
+<li>
+<p>Click <code>Run</code>. You should see a 10.1 Hz sine wave on the oscilloscope.</p>
+</li>
+<li>
+<p>Again, it would be convenient if we could change the parameters of the
+   waveform (e.g. frequency or amplitude) without having to stop the VI, edit
+   the Simulate Signal block, and restart. Fortunately that's easy to do.</p>
+</li>
+<li>
+<p>Stop the VI. Move the cursor over the small double arrow in the middle of
+   the bottom edge of the Simulate Signal block. It will turn into a small blue
+   square and the cursor will become a resize arrow.</p>
+<p><center>
+<img alt="" src="../figs/grab46.png" />
+</center></p>
+</li>
+<li>
+<p>Left click and drag down slightly until the dashed outline grows by one
+   increment, then release. Another white band, labeled <code>error out</code> will appear
+   (the brown color indicates the data type of the output). Left click in this
+   new box to bring up the menu of choices. This is the list of all available
+   inputs and outputs for this block. Select <code>Frequency</code>.</p>
+</li>
+<li>
+<p>Wire the slider output to this new input. Edit the slider to set its range
+   to be 0 to 100 and change its name.</p>
+</li>
+<li>
+<p>Go to the front panel and start the VI. Adjust the slider and observe that
+   the frequency of the sine wave changes corresponding to the position of the
+   slider.</p>
+</li>
+<li>
+<p>You may notice that the output sine wave is initially discontinuous and that
+   the response to changes in the slider position is very sluggish. The former
+   is caused by a lag in synchronizing the generation and output processes and
+   the latter is due to the amount of buffering that Labview provides. We can
+   speed things up by increasing the sample rate.</p>
+</li>
+<li>
+<p>Double click on the <code>Simulate Signal</code> block. In the <code>Timing</code> sub-panel, set
+    <code>Samples per second (Hz)</code> to 10000. Restart the VI.  Things should now be a
+    bit more responsive.</p>
+</li>
+<li>
+<p>If you feel so inclined, place another slider (or knob) on the front panel
+    and use it to control the amplitude of the sine wave.</p>
+</li>
+<li>
+<p>Stop the VI and save it in a persistent location.</p>
+</li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../experiment_4-2/" class="btn btn-neutral float-right" title="Improved Resistance Measurement">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../introduction/" class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../introduction/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../experiment_4-2/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>

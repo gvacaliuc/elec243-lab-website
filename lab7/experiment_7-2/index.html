@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Recording a Reference Signal - ELEC 243 Labs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Recording a Reference Signal";
+    var mkdocs_page_input_path = "lab7/experiment_7-2.md";
+    var mkdocs_page_url = "/lab7/experiment_7-2/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ELEC 243 Labs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab Home</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/lab-station-handbook/">Lab Station Handbook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/tools-and-resources/">Tools and Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab-home/virtualbench/">VirtualBench</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">References</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../references/patch-cords-and-cables/">Patch Cords and Cables</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/interface/">The Interface Modules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/wiring/">Wiring</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/color_code/">Resistor Color Codes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/lab-report/">Lab Report</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/manuals-and-data-sheets/">Instruction Manuals and Data Sheets</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab1/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/safety/">Safety</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-1/">DC Measurements: the DMM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/plotting-help/">Plotting Data in Matlab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/interlude/">Grounds and Grounding</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/experiment_1-2/">The Oscilloscope and Function Generator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab1/postlude/">Cleaning Up</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab2/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/before-lab/">Before Lab</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-1/">Measuring Heat and Light</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/breadboard/">The Breadboard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-2/">Electroacoustic Transducers II</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab2/experiment_2-3/">Optoelectronic Signal Sources and Sinks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab3/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/background/">Background</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-1/">Voltage and Waveform Measurements</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab3/experiment_3-2/">Writing a Labview Program</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab4/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-1/">Labview as a Source of Signals</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab4/experiment_4-2/">Improved Resistance Measurement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab5/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-1/">The 741 Op-Amp</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab5/experiment_5-2/">Voltage Amplifiers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 6</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab6/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-1/">Transducer Amplifiers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab6/experiment_6-2/">Frequency Response</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 7</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_7-1/">Sampling and Quantization</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Recording a Reference Signal</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#experiment-72">Experiment 7.2</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recording-a-reference-signal">Recording a Reference Signal</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../experiment_7-3/">Signal Processing in Matlab</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab 8</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../lab8/">Home</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/introduction/">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../lab8/experiment_8-1/">Digital Logic</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../finallab/">Final Lab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Miscellanous Images</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../misc_images/">Home</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ELEC 243 Labs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab 7 &raquo;</li>
+        
+      
+    
+    <li>Recording a Reference Signal</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="experiment-72">Experiment 7.2</h1>
+<h2 id="recording-a-reference-signal">Recording a Reference Signal</h2>
+<p>The first step in batch processing is to record the input signal as a disk
+file. We will use a Labview program to do this, then use Matlab to do the
+signal processing itself.</p>
+<h3 id="equipment">Equipment</h3>
+<ul>
+<li>Telephone handset</li>
+<li>Dynamic microphone</li>
+<li>Test board</li>
+<li>A musical instrument if you have one!</li>
+</ul>
+<h3 id="part-a-digital-recording">Part A: Digital Recording</h3>
+<ol>
+<li>
+<p>Connect the cable from the DAQ card to J3-1 on the rightmost interface
+   module. Plug the sound card cable into J2-1. Plug the phone handset into
+   J1-7.</p>
+</li>
+<li>
+<p>Build the following two circuits. The top one will be used to amplify and
+   record your voice via the dynamic microphone, and the bottom one will play
+   back audio from the computer to the phone handset.</p>
+<p><center>
+<img alt="" src="../figs/img281.png" />
+</center></p>
+</li>
+<li>
+<p>Verify that the audio output is working by playing this <a href="../signals/sine.au">test
+   signal.</a></p>
+</li>
+<li>
+<p>Download <a href="../labview/Recorder.vi">Recorder</a> and open in Labview. This program
+   will record four seconds of a signal to a file.</p>
+</li>
+<li>
+<p>Make sure Dev1 is selected as your device name. Start the program by
+   pressing the Run button or CTRL-R.</p>
+</li>
+<li>
+<p>When ready to record, press the <code>START RECORDING</code> button. Wait for the green
+   indicator to come on and speak a significant phrase (e.g. "My labbies are so
+   great") into the microphone. You should see the signal on the waveform chart
+   as it is being recorded.</p>
+</li>
+<li>
+<p>After four seconds a window will pop up asking you to save the signal to a
+   file. Save it as <code>sig1.tdms</code>. The default location will be in the C drive
+   under folder Temp.</p>
+</li>
+<li>
+<p>Navigate to the saved file and right-click on the file. Select Open With
+   <span>\(\rightarrow\)</span>  Excel Importer.</p>
+</li>
+<li>
+<p>Go to the sheet called Untitled. You will see the sampled data in the sheet
+   called Untitled. Note that the samples have been scaled so that their value
+   corresponds to the signal value in volts. Save the excel file as <code>sig1.xlsx</code>
+   and close.</p>
+</li>
+<li>
+<p>Make a second recording of whistling a tune, playing your flute, or some
+    other sequence of tones with a "simple" harmonic structure. Or play a pure
+    tone via your smart phone (find an app or search on youtube).  Save this as
+    <code>sig2.xlsx</code>.</p>
+</li>
+</ol>
+<h3 id="part-b-loading-the-signals-into-matlab">Part B: Loading the Signals into Matlab</h3>
+<ol>
+<li>Load Matlab from the Start menu by following the All Programs  <span>\(\rightarrow\)</span>
+   Matlab  <span>\(\rightarrow\)</span>  Matlab R2017a. (You could also transfer the files to
+   your laptop and work with Matlab on your own computer.)</li>
+</ol>
+<p>Our signals were recorded with a sampling rate of 10 kHz. We can save a
+little typing by defining a Matlab variable for the sampling frequency:</p>
+<pre><code class="matlab">Fs=10000; 
+</code></pre>
+
+<p>Select the button "Import Data". Navigate to the data location and double-click
+on the file <code>sig1.xlsx</code>. Select the Untitled sheet. Rename Column B (default is
+Voltage) as <code>sig1</code>. Click on Import Selection.  </p>
+<p>You should now have a table of values named something like "sig1S1". Convert it
+from a table to an array of values with the command:</p>
+<pre><code class="matlab">sig1=table2array(sig1S1)
+</code></pre>
+
+<p>Play it back by typing the following command: </p>
+<pre><code class="matlab">sound(sig1, Fs)
+</code></pre>
+
+<p><strong>What happens if you reduce <code>Fs</code> by half?</strong> </p>
+<p>Repeat steps 3 and 4 for your second signal (sig2). </p>
+<h3 id="part-c-spectral-analysis">Part C: Spectral Analysis</h3>
+<p>Display the spectrogram of your signal: </p>
+<pre><code class="matlab">specgram(sig1, 256, Fs);
+</code></pre>
+
+<p>The number n=256 in the above command is the length of the signal chunk used in
+computing the Fourier transform. For our sample rate of 10 kHz, <strong>what is the
+time resolution (n/fs)? What is the frequency resolution (fs/n)?</strong></p>
+<p>We can get finer resolution in time or frequency (but not both at the same
+time) by decreasing or increasing this number. Try values of 128 and 512 and
+<strong>comment on what difference they make in the spectrogram.</strong> With 512 you
+should be able to see the individual harmonics of the pitch frequency. If you
+have a low pitched voice, you may be able to see the individual pitch pulses
+with length 128. Can you distinguish the voiced from the unvoiced sounds?</p>
+<p><strong>What are the time and frequency resolutions corresponding to these transform
+lengths?</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <code>figure()</code> command allows you to display several plots or spectrograms
+at one time</p>
+</div>
+<pre><code class="matlab">figure(2)
+specgram(sig1, 128, Fs)
+</code></pre>
+
+<p>will create a new plot window (Figure 2) and display the new spectrogram in it.
+To go back to Figure 1, just type <code>figure(1)</code>. The spectrogram is simply a
+concatenation of the spectra of individual chunks of the signal, which we can
+compute individually. Use the time scale on the spectrogram to find a strong
+voiced region of the signal (say, for example at <span>\(t=1.5s\)</span>). Since the sampling
+rate is 10 kHz, this corresponds to a sample index of <span>\(t*10000\)</span> (<span>\(15000\)</span> in our
+example). Extract a chunk of length 256 from the signal at this point: </p>
+<pre><code class="matlab">chunk=sig1(15000:15255);
+</code></pre>
+
+<p>Examine your chunk with the plot command: </p>
+<pre><code class="matlab">plot(chunk) 
+</code></pre>
+
+<p>Now take the DFT of this chunk of the signal: </p>
+<pre><code class="matlab">spectrum = fft(chunk);
+</code></pre>
+
+<p>Let's first try to plot the spectrum in the 'obvious' way:</p>
+<pre><code class="matlab">plot(spectrum)
+</code></pre>
+
+<p>The result is not what we expected! The spectrum is a complex valued sequence,
+and Matlab plots complex functions as the real vs. imaginary part. A more
+satisfying picture can be had with: </p>
+<pre><code class="matlab"> plot(abs(spectrum));
+</code></pre>
+
+<p>Note that this plots both positive and negative frequencies. To get a more
+traditional plot: </p>
+<pre><code class="matlab"> plot(abs(spectrum(1:129)));
+</code></pre>
+
+<p>Can you see the shape of this curve in the spectrogram at the point where you
+took your chunk? The spectrogram uses a logarithmic scale for magnitude, so you
+might try one of the following:</p>
+<pre><code class="matlab">plot(log(abs(spectrum(1:129))));
+</code></pre>
+
+<pre><code class="matlab">semilogy(abs(spectrum(1:129)));
+</code></pre>
+
+<p><strong>Take a screenshot.</strong></p>
+<p>Display the spectrogram of your musical signal.</p>
+<pre><code class="matlab">specgram(sig2, 256, Fs);
+</code></pre>
+
+<p><strong>Can you identify the individual notes in the tune?</strong> Different instruments
+have different harmonic structures: a flute has few harmonics, an oboe or
+trumpet has many, a clarinet has no even harmonics. <strong>Analyze the harmonic
+structure of your tones.</strong></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../experiment_7-3/" class="btn btn-neutral float-right" title="Signal Processing in Matlab">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../experiment_7-1/" class="btn btn-neutral" title="Sampling and Quantization"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../experiment_7-1/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../experiment_7-3/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+      <script src="../../mathjax-config.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
